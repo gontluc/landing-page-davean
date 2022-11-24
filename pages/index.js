@@ -16,9 +16,16 @@ export default function Home() {
           Hola <a href="https://nextjs.org">Davean!</a>
         </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+        <p className={styles.description1}>
+          Davean Comunión
+        </p>
+
+        <p className={styles.description2}>
+          Davean Comunión
+        </p>
+
+        <p className={styles.description3}>
+          Davean Comunión
         </p>
 
         <div className={styles.grid}>

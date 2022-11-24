@@ -45,15 +45,32 @@
   font-size: 4rem;
 }
 
-.title,
-.description {
+.title {
   text-align: center;
 }
 
-.description {
+.description1 {
   margin: 4rem 0;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 3rem;
+  font-family: 'Modernline', sans-serif;
+  text-align: center;
+}
+
+.description2 {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 3rem;
+  font-family: 'DK Lemon Yellow Sun', sans-serif;
+  text-align: center;
+}
+
+.description3 {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 3rem;
+  font-family: 'Adele', sans-serif;
+  text-align: center;
 }
 
 .code {
@@ -126,4 +143,28 @@
   .logo img {
     filter: invert(1);
   }
+}
+
+@font-face {
+  font-family: 'Modernline';
+  src: url('modernline-webfont.woff2') format('woff2'),
+       url('modernline-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DK Lemon Yellow Sun';
+  src: url('dk_lemon_yellow_sun-webfont.woff2') format('woff2'),
+       url('dk_lemon_yellow_sun-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Adele';
+  src: url('adele-light-webfont-webfont.woff2') format('woff2'),
+       url('adele-light-webfont-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
