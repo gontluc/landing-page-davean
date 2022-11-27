@@ -1,9 +1,25 @@
-html,
-body {
+* {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+  --blue: #052E50;
+  --green: #00a197;
+  --green-transparent: rgba(0, 161, 151, 0.8);
+
+  --adele-font: 'Adele', sans-serif;
+  --dk-lemon-font: 'DK Lemon Yellow Sun', sans-serif;
+  --modernline-font: 'Modernline', sans-serif;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--adele-font);
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -11,16 +27,36 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+ul {
+  list-style: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+::selection { 
+  background: transparent;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Modernline';
+  src: url('./fonts/modernline-webfont.woff2') format('woff2'),
+       url('./fonts/modernline-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+   font-family: 'DK Lemon Yellow Sun';
+   src: url('./fonts/dk_lemon_yellow_sun-webfont.woff2') format('woff2'),
+        url('./fonts/dk_lemon_yellow_sun-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Adele';
+   src: url('./fonts/adele-light-webfont-webfont.woff2') format('woff2'),
+        url('./fonts/adele-light-webfont-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
 }

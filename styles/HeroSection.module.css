@@ -1,0 +1,64 @@
+/* .description1 {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 3rem;
+  font-family: 'Modernline', sans-serif;
+  text-align: center;
+}
+
+.description2 {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 3rem;
+  font-family: 'DK Lemon Yellow Sun', sans-serif;
+  text-align: center;
+}
+
+.description3 {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 3rem;
+  font-family: 'Adele', sans-serif;
+  text-align: center;
+} */
+
+.container {
+  height: 200vh;
+  font-family: var(--dk-lemon-font);
+  color: #fff;
+}
+
+.heroImg {
+  width: auto;
+  height: 100vh;
+  background-image: url('../public/images/heroImg1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.mi {
+  position: absolute;
+  font-size: 140px;
+  transform: rotate(-7deg);
+  top: 31vh;
+  left: 9vw;
+}
+
+.primera {
+  position: absolute;
+  top: 46vh;
+  left: 11vw;
+  width: 400px;
+  height: auto;
+}
+
+.comunion {
+  position: absolute;
+  top: 17vh;
+  right: 5vw;
+  font-size: 230px;
+  -webkit-text-stroke-width: 1px;
+  letter-spacing: .02em;
+}
