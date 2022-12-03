@@ -60,3 +60,27 @@ ul {
    font-weight: normal;
    font-style: normal;
 }
+
+.absolute {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+}
+
+.upLetter {
+  animation: letter-up .08s ease-in-out forwards;
+}
+
+@keyframes letter-up {
+  from {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}

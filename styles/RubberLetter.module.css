@@ -1,0 +1,10 @@
+.comunionLetter {
+    font-size: 230px;
+    -webkit-text-stroke-width: 1px;
+    
+    /* Acts like letter-spacing */
+    margin-right: 0.02em;
+    
+    /* For rubber-band to work, elements need to be set to inline-block */
+    display: inline-block;
+  }

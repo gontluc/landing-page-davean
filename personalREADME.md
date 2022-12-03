@@ -16,13 +16,19 @@
 
 - compress imgs webp or jpg
 
+- add link to logo
+
+- cta btn --> Davean's whatsup script
+
+- animation mi primera comunion text (and first load hero section and navbar)
+
 <br>
 
 # Tomorrow 
 
 - do svg navbar img (already downloaded) (ask him if he likes it)
 
-- do scrollbar
+- do custom scrollbar and cursor
 
 - do hovers navbar
 
@@ -33,3 +39,7 @@
 # Hecho
 
 - crear carpeta fuentes y cambiar url (para ordenar archivos)
+
+# dependencies
+ 
+npm i framer-motion

@@ -2,8 +2,19 @@ import Head from 'next/head'
 
 import Navbar from '../components/Navbar/Navbar'
 import HeroSection from '../components/HeroSection/HeroSection'
+import Catalogo from '../components/Catalogo/Catalogo'
+import Packs from '../components/Packs/Packs'
+import Preguntas from '../components/Preguntas/Preguntas'
+import Footer from '../components/Footer/Footer'
+
+import { useRef } from 'react'
 
 export default function Home() {
+
+  const catalogo = useRef(null)
+  const packs = useRef(null)
+  const preguntas = useRef(null)
+
   return (
     <>
       <Head>
@@ -12,9 +23,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
+      <Navbar catalogo={catalogo} packs={packs} preguntas={preguntas}/>
 
-      <HeroSection />
+      <main>
+        <HeroSection />
+
+        <Catalogo catalogo={catalogo}/>
+
+        <Packs packs={packs}/>
+
+        <Preguntas preguntas={preguntas}/>
+      </main>
+      
+      <Footer />
     </>
   )
 }
