@@ -1,12 +1,94 @@
 import styles from '../../styles/HeroSection.module.css'
 
-import Image from 'next/image'
-
-import primera from '../../public/images/primera.png'
-
 import RubberLetter from './RubberLetter/RubberLetter'
 
+import { useEffect, useState } from 'react'
+
 export default function HeroSection() {
+
+    /* Change nav li color based on current img displaying */
+
+    /* function changeNavColor(i) {
+        switch (i) {
+            case 1:
+                document.querySelector('html').style.setProperty('--nav-color', '#fff')
+                break
+            case 2:
+                document.querySelector('html').style.setProperty('--nav-color', '#fff')
+                break
+            case 4:
+                document.querySelector('html').style.setProperty('--nav-color', 'var(--blue)')
+                break
+            case 5:
+                document.querySelector('html').style.setProperty('--nav-color', '#fff')
+                break
+            case 6:
+                document.querySelector('html').style.setProperty('--nav-color', '#fff')
+                break
+            default:
+                document.querySelector('html').style.setProperty('--nav-color', 'var(--blue)')
+                break
+        }
+    }
+
+    useEffect(() => {
+
+        for(let i = 0; i < 7; i++) {
+            setInterval(() => {
+                setTimeout(() => {
+                    changeNavColor(i)
+                }, 5000 * i)
+            }, 5000 * 7)
+
+            setTimeout(() => {
+                changeNavColor(i)
+            }, 5000 * i)
+        }
+    }, []) */
+
+    /* Change visibility 'Mi primera comunión' */
+
+    const [showHeroTitle, setShowHeroTitle] = useState(true)
+
+    function changeHeroTitle(i) {
+        switch (i) {
+            case 0:
+                setShowHeroTitle(true)
+                break
+            case 1:
+                setShowHeroTitle(true)
+                break
+            case 2:
+                setShowHeroTitle(false)
+                break
+            case 4:
+                setShowHeroTitle(false)
+                break
+            case 5:
+                setShowHeroTitle(false)
+                break
+            case 6:
+                setShowHeroTitle(false)
+                break
+            default:
+                setShowHeroTitle(false)
+                break
+        }
+    }
+
+    useEffect(() => {
+        for(let i = 0; i < 7; i++) {
+            setInterval(() => {
+                setTimeout(() => {
+                    changeHeroTitle(i)
+                }, 5000 * i)
+            }, 5000 * 7)
+
+            setTimeout(() => {
+                changeHeroTitle(i)
+            }, 5000 * i)
+        }
+    }, [])
 
     /* 
         RubberBand animation and framer-motion npm:
@@ -14,10 +96,13 @@ export default function HeroSection() {
         https://www.framer.com/docs/use-animation-controls/
     */
 
-    const sentence = 'COMUNIÓN'.split('')
+    const word1 = 'mi'.split('')
+    const word2 = 'primera'.split('')
+    const word3 = 'COMUNIÓN'.split('')
 
     return (
         <div className={styles.container}>
+
             <div className={styles.heroImg1}></div>
             <div className={styles.heroImg2}></div>
             <div className={styles.heroImg3}></div>
@@ -26,15 +111,30 @@ export default function HeroSection() {
             <div className={styles.heroImg6}></div>
             <div className={styles.heroImg7}></div>
 
-            <h1 className={styles.mi}>mi</h1>
-            <Image src={primera} alt="primera" priority className={styles.primera}/>
+            <div className={styles.heroTitle} style={{ opacity: showHeroTitle ? 1 : 0 }}>
+                <div className={styles.mi}>
+                    {word1.map((letter, index) => {
+                        return (
+                            <RubberLetter key={index} letter={letter} index={index} classLetter={'mi'}/>
+                        )
+                    })}
+                </div>
 
-            <div className={styles.comunion}>
-                {sentence.map((letter, index) => {
-                    return (
-                        <RubberLetter key={index} letter={letter} />
-                    )
-                })}
+                <div className={styles.primera}>
+                    {word2.map((letter, index) => {
+                        return (
+                            <RubberLetter key={index} letter={letter} index={index} classLetter={'primera'}/>
+                        )
+                    })}
+                </div>
+                
+                <div className={styles.comunion}>
+                    {word3.map((letter, index) => {
+                        return (
+                            <RubberLetter key={index} letter={letter} index={index} classLetter={'comunion'}/>
+                        )
+                    })}
+                </div>
             </div>
         </div>
     )

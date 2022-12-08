@@ -1,10 +1,92 @@
+.miLetter {
+  font-size: 100px;
+  display: inline-block;
+  font-weight: 100;
+}
+
+.primeraLetter {
+  font-size: 130px;
+  display: inline-block;
+  font-weight: 100;
+}
+
 .comunionLetter {
-    font-size: 230px;
-    -webkit-text-stroke-width: 1px;
-    
-    /* Acts like letter-spacing */
-    margin-right: 0.02em;
-    
-    /* For rubber-band to work, elements need to be set to inline-block */
-    display: inline-block;
+  font-size: 160px;
+  /* -webkit-text-stroke-width: 1px; */
+  
+  /* Acts like letter-spacing */
+  margin-right: 0.02em;
+  
+  /* For rubber-band to work, elements need to be set to inline-block */
+  display: inline-block;
+
+  /* animation: rubber-band 1s ease-in-out forwards; */
+}
+
+/* @keyframes rubber-band {
+  from {
+    transform: scale3d(1, 1, 1);
   }
+
+  20% {
+    transform: scale3d(1.4, .55, 1);
+  }
+
+  40% {
+    transform: scale3d(.75, 1.25, 1);
+  }
+
+  60% {
+    transform: scale3d(1.25, .85, 1);
+  }
+
+  80% {
+    transform: scale3d(.9, 1.05, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+} */
+
+@media (max-width: 1800px) {
+  .miLetter {
+    font-size: 90px;
+  }
+  
+  .primeraLetter {
+    font-size: 100px;
+  }
+  
+  .comunionLetter {
+    font-size: 140px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .miLetter {
+    font-size: 70px;
+  }
+  
+  .primeraLetter {
+    font-size: 80px;
+  }
+  
+  .comunionLetter {
+    font-size: 110px;
+  }
+}
+
+@media (max-width: 600px) {
+  .miLetter {
+    font-size: 50px;
+  }
+  
+  .primeraLetter {
+    font-size: 60px;
+  }
+  
+  .comunionLetter {
+    font-size: 80px;
+  }
+}

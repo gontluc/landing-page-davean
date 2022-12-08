@@ -1,14 +1,14 @@
 .navbar {
   width: 100%;
-  height: 140px;
-  background-color: transparent;
+  height: 110px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
   transition: all .8s ease-in-out;
-  z-index: 2;
+  z-index: 3;
+  background-color: var(--green-transparent);
 }
 
 .imgContainer {
@@ -16,7 +16,7 @@
 }
 
 .logo {
-  width: 100px;
+  width: 80px;
   height: auto;
   background-color: #fff;
   border-radius: 200px;
@@ -26,14 +26,17 @@
 .navigation {
   display: flex;
   gap: 40px;
-  font-size: 40px;
-  color: var(--blue);
+  font-size: 35px;
+  color: #fff;
   transition: all .8s ease-in-out;
 }
 
 .navigation li {
-  -webkit-text-stroke-width: 1px;
+  font-weight: bold;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .navigation .catalogo {
@@ -69,7 +72,7 @@
 .btn {
   background-color: #fff;
   font-family: var(--dk-lemon-font);
-  font-size: 35px;
+  font-size: 30px;
   color: var(--blue);
   border-radius: 18px;
   padding: 2px 25px;
@@ -87,4 +90,232 @@
 .btn:active {
   transition: none;
   transform: scale(.9);
+}
+
+.hamMenu {
+  display: none;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.hamMenu:active {
+  transform: scale(.9);
+}
+
+.closeContainer {
+  z-index: 5;
+  cursor: pointer;
+  position: fixed;
+  top: 6vh;
+  left: 55%;
+  width: 60px;
+  height: 60px;
+  border: 2px rgb(130, 130, 130) solid;
+  border-radius: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out .4s;
+}
+
+.close {
+  color: #fff;
+  width: 30px;
+  height: auto;
+}
+
+.closeContainer:hover {
+  transform: scale(.9);
+}
+
+.closeContainer:active {
+  transform: scale(.8);
+}
+
+.navResponsive {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 70%;
+  background-color: var(--blue);
+  display: none;
+  z-index: 4;
+  transition: all .6s ease-in-out;
+}
+
+.navigationResponsive {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20vh;
+  margin-left: 15vw;
+  gap: 100px;
+  font-size: 70px;
+  color: #fff;
+  transition: all .6s ease-in-out;
+}
+
+.navigationResponsive li {
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  -webkit-text-stroke-width: .1px;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--dk-lemon-font);
+  letter-spacing: .1em;
+}
+
+.navigationResponsive .catalogo {
+  width: 256px;
+  height: 86px;
+  position: relative;
+}
+
+.navigationResponsive .catalogo:active {
+  transform: scale(.9);
+}
+
+.navigationResponsive .packs {
+  width: 156px;
+  height: 86px;
+  position: relative;
+}
+
+.navigationResponsive .packs:active {
+  transform: scale(.9);
+}
+
+.navigationResponsive .preguntas {
+  width: 276px;
+  height: 86px;
+  position: relative;
+}
+
+.navigationResponsive .preguntas:active {
+  transform: scale(.9);
+}
+
+.logoContainerResponsive {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.logoResponsive {
+  width: 80px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 200px;
+}
+
+@media (max-width: 1100px) {
+  .logo {
+    width: 70px;
+  }
+  
+  .navigation {
+    gap: 20px;
+    font-size: 30px;
+  }
+
+  .btn {
+    font-size: 25px;
+    padding: 2px 20px;
+  }
+}
+
+@media (max-width: 950px) {
+  .navbar {
+    height: 80px;
+  }
+
+  .imgContainer {
+    display: none;
+  }
+  
+  .navigation {
+    display: none;
+  }
+
+  .hamMenu {
+    display: block;
+    width: 35px;
+    height: auto;
+    margin-left: 4vw;
+    color: #fff;
+  }
+
+  .navResponsive {
+    display: block;
+  }
+
+  .btn {
+    font-size: 20px;
+    padding: 3px 15px;
+  }
+}
+
+@media (max-width: 750px) {
+  .navigationResponsive {
+    gap: 60px;
+    font-size: 50px;
+  }
+  
+  .navigationResponsive .catalogo {
+    width: 180px;
+    height: 70px;
+  }
+  
+  .navigationResponsive .packs {
+    width: 180px;
+    height: 70px;
+  }
+  
+  .navigationResponsive .preguntas {
+    width: 180px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 500px) {
+  .closeContainer {
+    top: 5vh;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .close {
+    width: 25px;
+  }
+
+  .navigationResponsive {
+    gap: 40px;
+    font-size: 40px;
+  }
+  
+  .navigationResponsive .catalogo {
+    width: 150px;
+    height: 60px;
+  }
+  
+  .navigationResponsive .packs {
+    width: 150px;
+    height: 60px;
+  }
+  
+  .navigationResponsive .preguntas {
+    width: 150px;
+    height: 60px;
+  }
+
+  .logoContainerResponsive {
+    margin-top: 15vh;
+  }
+  
+  .logoResponsive {
+    width: 70px;
+  }
 }

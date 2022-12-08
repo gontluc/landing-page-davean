@@ -36,9 +36,7 @@
 
 - add nextjs links navbar as in portfolio
 
-# Hecho
-
-- crear carpeta fuentes y cambiar url (para ordenar archivos)
+<br>
 
 # dependencies
  

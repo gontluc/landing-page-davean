@@ -13,6 +13,11 @@ html {
   --dk-lemon-font: 'DK Lemon Yellow Sun', sans-serif;
   --modernline-font: 'Modernline', sans-serif;
 
+  --hero-duration: calc(5s * 7);
+  --hero-delay: 5s;
+
+  /* --nav-color: var(--blue); */
+
   scroll-behavior: smooth;
 }
 
@@ -68,7 +73,7 @@ ul {
 }
 
 .upLetter {
-  animation: letter-up .08s ease-in-out forwards;
+  animation: letter-up .1s ease-in-out forwards;
 }
 
 @keyframes letter-up {
@@ -77,7 +82,7 @@ ul {
   }
 
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
   }
 
   to {
