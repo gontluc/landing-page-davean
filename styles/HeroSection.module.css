@@ -1,5 +1,5 @@
 .container {
-  height: 100%;
+  height: 100vh;
   font-family: var(--dk-lemon-font);
   color: #fff;
   position: relative;
