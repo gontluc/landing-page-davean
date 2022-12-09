@@ -1,0 +1,168 @@
+.container {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.frase {
+    color: var(--blue);
+    font-size: 55px;
+    font-weight: 100;
+    line-height: 1em;
+    text-align: center;
+    position: relative;
+}
+
+.abreComilla {
+    position: absolute;
+    top: -80%;
+    left: -55%;
+    transform: scale(.4);
+}
+
+.cierraComilla {
+    position: absolute;
+    top: -30%;
+    right: -55%;
+    transform: scale(.4);
+}
+
+.linea {
+    background-color: rgba(0, 161, 151, 0.2);
+    height: 3px;
+    border-radius: 200px;
+    width: 210px;
+}
+
+.davean {
+    color: var(--green);
+    font-family: var(--modernline-font);
+    font-weight: 300;
+    font-size: 32px;
+}
+
+@media (max-width: 1400px) {
+    .container {
+        height: 400px;
+    }
+
+    .frase {
+        font-size: 45px;
+    }
+
+    .abreComilla {
+        transform: scale(.3);
+        top: -90%;
+    }
+
+    .cierraComilla {
+        transform: scale(.3);
+        top: -50%;
+    }
+
+    .linea {
+        width: 180px;
+    }
+
+    .davean {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 950px) {
+    .container {
+        height: 300px;
+        gap: 40px;
+    }
+    
+    .frase {
+        font-size: 35px;
+    }
+
+    .abreComilla {
+        transform: scale(.2);
+        top: -120%;
+        left: -65%;
+    }
+
+    .cierraComilla {
+        transform: scale(.2);
+        top: -85%;
+        right: -65%;
+    }
+
+    .linea {
+        width: 140px;
+        height: 2px;
+    }
+
+    .davean {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        height: 300px;
+        gap: 30px;
+    }
+    
+    .frase {
+        font-size: 25px;
+    }
+
+    .abreComilla {
+        transform: scale(.15);
+        top: -200%;
+        left: -72%;
+    }
+
+    .cierraComilla {
+        transform: scale(.15);
+        top: -155%;
+        right: -70%;
+    }
+
+    .linea {
+        width: 140px;
+        height: 2px;
+    }
+
+    .davean {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:400px) {
+    .container {
+        height: 350px;
+        gap: 25px;
+    }
+    
+    .frase {
+        font-size: 20px;
+    }
+
+    .abreComilla {
+        transform: scale(.1);
+        top: -360%;
+        left: -40%;
+    }
+
+    .cierraComilla {
+        transform: scale(.1);
+        top: -340%;
+        right: -40%;
+    }
+
+    .linea {
+        width: 100px;
+    }
+
+    .davean {
+        font-size: 18px;
+    }
+}

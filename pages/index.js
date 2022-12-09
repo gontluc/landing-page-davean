@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 import Navbar from '../components/Navbar/Navbar'
 import HeroSection from '../components/HeroSection/HeroSection'
+import Frase from '../components/Frase/Frase'
 import Catalogo from '../components/Catalogo/Catalogo'
 import Packs from '../components/Packs/Packs'
 import Preguntas from '../components/Preguntas/Preguntas'
@@ -27,6 +28,8 @@ export default function Home() {
 
       <main>
         <HeroSection />
+
+        <Frase />
 
         <Catalogo catalogo={catalogo}/>
 
