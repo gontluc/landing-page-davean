@@ -1,3 +1,53 @@
 .container {
-    height: 100vh;
+    background: linear-gradient(180deg, #FFF5EE 0%, rgba(254, 232, 216, 0) 78.47%);
+    scroll-margin-top: 110px;
+}
+
+.section1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vw;
+}
+
+.imgContainer {
+    transform: translateY(400px);
+    filter: blur(8px);
+    opacity: 0;
+}
+
+.catalogo1 {
+    max-width: 45vw;
+    height: auto;
+}
+
+.rightSection1 {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+}
+
+.frase {
+    color: var(--blue);
+    font-size: 80px;
+    font-weight: 100;
+    margin-top: 30%;
+}
+
+@media (max-width: 950px) {
+    .container {
+        scroll-margin-top: 80px;
+    }
+}
+  
+@media (max-width: 750px) {
+    .container {
+        scroll-margin-top: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .frase {
+        font-size: 20px;
+    }
 }

@@ -21,7 +21,6 @@ export default function RubberLetter({ letter, index, classLetter }) {
                 return styles.comunionLetter
             default:
                 return new Error()
-                break
        }
     }
 
