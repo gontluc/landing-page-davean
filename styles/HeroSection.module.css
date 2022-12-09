@@ -11,7 +11,7 @@
 .heroImg1 {
   width: auto;
   height: 100vh;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('../public/images/heroImg1.jpg');
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.0)), url('../public/images/heroImg1.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -27,7 +27,7 @@
 .heroImg2 {
   width: auto;
   height: 100vh;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg2.jpg');
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.0)), url('../public/images/heroImg2.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -44,7 +44,7 @@
 .heroImg3 {
   width: auto;
   height: 100vh;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg3.jpg');
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.0)), url('../public/images/heroImg3.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -61,7 +61,7 @@
 .heroImg4 {
   width: auto;
   height: 100vh;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg4.jpg');
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.0)), url('../public/images/heroImg4.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -78,7 +78,7 @@
 .heroImg5 {
   width: auto;
   height: 100vh;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg5.jpg');
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.0)), url('../public/images/heroImg5.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -95,7 +95,7 @@
 .heroImg6 {
   width: auto;
   height: 100vh;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg6.jpg');
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.0)), url('../public/images/heroImg6.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -112,7 +112,7 @@
 .heroImg7 {
   width: auto;
   height: 100vh;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg7.jpg');
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.0)), url('../public/images/heroImg7.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
