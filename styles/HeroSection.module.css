@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  height: 100%;
   font-family: var(--dk-lemon-font);
   color: #fff;
   position: relative;
@@ -10,7 +10,7 @@
 .heroImg1 {
   width: auto;
   height: 100vh;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.14)), url('../public/images/heroImg1.webp');
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('../public/images/heroImg1.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

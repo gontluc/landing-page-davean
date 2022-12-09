@@ -160,7 +160,7 @@
   cursor: pointer;
   align-items: center;
   display: flex;
-  -webkit-text-stroke-width: .1px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-fill-color: transparent;
   font-family: var(--dk-lemon-font);
   letter-spacing: .1em;
@@ -258,6 +258,11 @@
 }
 
 @media (max-width: 750px) {
+
+  .navbar {
+    height: 60px;
+  }
+
   .navigationResponsive {
     gap: 60px;
     font-size: 50px;
