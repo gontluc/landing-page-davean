@@ -24,7 +24,7 @@
   opacity: 0;
 }
 
-.heroImg2 {
+.heroImg7 {
   width: auto;
   height: 100vh;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg2.jpg');
@@ -41,7 +41,7 @@
   opacity: 0;
 }
 
-.heroImg3 {
+.heroImg6 {
   width: auto;
   height: 100vh;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg3.jpg');
@@ -92,7 +92,7 @@
   opacity: 0;
 }
 
-.heroImg6 {
+.heroImg2 {
   width: auto;
   height: 100vh;
   background: var(--herosection-img6-dt);
@@ -109,7 +109,7 @@
   opacity: 0;
 }
 
-.heroImg7 {
+.heroImg3 {
   width: auto;
   height: 100vh;
   background: var(--herosection-img7-dt);
@@ -194,11 +194,11 @@
     background-position: 38% 40%;
   }
 
-  .heroImg2 {
+  .heroImg7 {
     background-position: 38% 50%;
   }
 
-  .heroImg3 {
+  .heroImg6 {
     background-position: 35% 50%;
   }
 
@@ -210,11 +210,11 @@
     background-position: 70% 80%;
   }
 
-  .heroImg6 {
+  .heroImg2 {
     background-position: 45% 60%;
   }
 
-  .heroImg7 {
+  .heroImg3 {
     background-position: 36% 45%;
   }
 
@@ -248,12 +248,12 @@
     overflow: hidden;
   }
 
-  .heroImg2 {
+  .heroImg7 {
     height: 70vh;
     overflow: hidden;
   }
 
-  .heroImg3 {
+  .heroImg6 {
     height: 70vh;
     overflow: hidden;
   }
@@ -272,7 +272,7 @@
     overflow: hidden;
   }
 
-  .heroImg6 {
+  .heroImg2 {
     height: 70vh;
     overflow: hidden;
     background: var(--herosection-img6-mobile);
@@ -281,7 +281,7 @@
     background-repeat: no-repeat;
   }
 
-  .heroImg7 {
+  .heroImg3 {
     height: 70vh;
     overflow: hidden;
     background: var(--herosection-img7-mobile);
