@@ -112,7 +112,7 @@ export default function HeroSection() {
 
             <div className={styles.heroImg1}></div>
             <div className={styles.heroImg7}></div>
-            <div className={styles.heroImg5}></div>
+            <div className={styles.heroImg6}></div>
             <div className={styles.heroImg4}></div>
             <div className={styles.heroImg5}></div>
             <div className={styles.heroImg2}></div>
