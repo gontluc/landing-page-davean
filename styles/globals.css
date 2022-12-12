@@ -16,6 +16,8 @@ html {
   --hero-duration: calc(5s * 7);
   --hero-delay: 5s;
 
+  --font-1400: 60px;
+
   /* --nav-color: var(--blue); */
 
   scroll-behavior: smooth;

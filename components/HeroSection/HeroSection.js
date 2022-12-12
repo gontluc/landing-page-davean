@@ -51,28 +51,32 @@ export default function HeroSection() {
     const [showHeroTitle, setShowHeroTitle] = useState(true)
 
     function changeHeroTitle(i) {
-        switch (i) {
-            case 0:
-                setShowHeroTitle(true)
-                break
-            case 1:
-                setShowHeroTitle(true)
-                break
-            case 2:
-                setShowHeroTitle(false)
-                break
-            case 4:
-                setShowHeroTitle(false)
-                break
-            case 5:
-                setShowHeroTitle(false)
-                break
-            case 6:
-                setShowHeroTitle(false)
-                break
-            default:
-                setShowHeroTitle(false)
-                break
+
+        /* If max-width:600px then mi primera comunion doesnt disappear */
+        if (window.innerWidth > 600) {
+            switch (i) {
+                case 0:
+                    setShowHeroTitle(true)
+                    break
+                case 1:
+                    setShowHeroTitle(true)
+                    break
+                case 2:
+                    setShowHeroTitle(false)
+                    break
+                case 4:
+                    setShowHeroTitle(false)
+                    break
+                case 5:
+                    setShowHeroTitle(false)
+                    break
+                case 6:
+                    setShowHeroTitle(false)
+                    break
+                default:
+                    setShowHeroTitle(false)
+                    break
+            }
         }
     }
 
@@ -80,7 +84,7 @@ export default function HeroSection() {
         for(let i = 0; i < 7; i++) {
             setInterval(() => {
                 setTimeout(() => {
-                    changeHeroTitle(i)
+                     changeHeroTitle(i)
                 }, 5000 * i)
             }, 5000 * 7)
 
@@ -110,6 +114,8 @@ export default function HeroSection() {
             <div className={styles.heroImg5}></div>
             <div className={styles.heroImg6}></div>
             <div className={styles.heroImg7}></div>
+
+            <div className={styles.auxContainer}></div>
 
             <div className={styles.heroTitle} style={{ opacity: showHeroTitle ? 1 : 0 }}>
                 <div className={styles.mi}>

@@ -3,6 +3,8 @@ import styles from '../../styles/Catalogo.module.css'
 import Image from 'next/image'
 
 import catalogo1 from '../../public/images/catalogo1.jpg'
+import cruz from '../../public/images/cruz.png'
+import rectangle from '../../public/images/rectangle.png'
 
 import { motion, useAnimationControls } from "framer-motion"
 
@@ -57,6 +59,10 @@ export default function Catalogo({ catalogo }) {
 
                 <div className={styles.rightSection1}>
                     <h4 className={styles.frase}>Fotos de Comunión <br /> clásicas y naturales</h4>
+
+                    <Image alt='white cruz' src={cruz} className={styles.cruz} quality={100} priority/>
+
+                    <Image alt='white rectangle' src={rectangle} className={styles.rectangle} quality={100} priority/>
                 </div>
             </section>
         </div>

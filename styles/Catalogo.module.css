@@ -1,5 +1,6 @@
 .container {
     background: linear-gradient(180deg, #FFF5EE 0%, rgba(254, 232, 216, 0) 78.47%);
+    background-color: #FFF5EE;/*  */
     scroll-margin-top: 110px;
 }
 
@@ -22,9 +23,10 @@
 }
 
 .rightSection1 {
-    width: 40vw;
+    width: 45vw;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .frase {
@@ -32,6 +34,71 @@
     font-size: 80px;
     font-weight: 100;
     margin-top: 30%;
+    z-index: 1;
+}
+
+/* .cruz {
+    position: absolute;
+    top: 54vh;
+    left: 10vw;
+}
+
+.cruz1 {
+    width: 6vw;
+    height: 64vh;
+    background-color: #fff;
+    position: absolute;
+    aspect-ratio: ;
+}
+
+.cruz2 {
+    width: 25vw;
+    height: 11vh;
+    background-color: #fff;
+    position: absolute;
+    top: 17vh;
+    left: -7.8vw;
+}
+
+.rectangle {
+    position: absolute;
+    top: 22vh;
+    right: 3vw;  
+    background-color: #fff;
+    width: 18vw;
+    height: 90vh;
+} */
+
+.cruz {
+    position: absolute;
+    top: 540px;
+    left: 25px;
+    width: 26vw;
+    height: auto;
+}
+ 
+.rectangle {
+    position: absolute;
+    top: 220px;
+    right: 30px;  
+    width: 19vw;
+    height: auto;
+}
+
+@media (max-width: 1400px) {
+    .frase {
+        font-size: var(--font-1400);
+    }
+
+    .cruz {
+        top: 400px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .cruz {
+        top: 350px;
+    }
 }
 
 @media (max-width: 950px) {
