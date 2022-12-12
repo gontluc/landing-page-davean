@@ -2,12 +2,12 @@ import styles from '../../../styles/RubberLetter.module.css'
 
 import { motion, useAnimationControls } from "framer-motion"
 
-import { useEffect, useState } from 'react'
+import { useEffect/* , useState */ } from 'react'
 
 
 export default function RubberLetter({ letter, index, classLetter }) {
 
-    const [isPlaying, setIsPlaying] = useState(false)
+    /* const [isPlaying, setIsPlaying] = useState(false) */
 
     const controls = useAnimationControls()
 
@@ -19,6 +19,8 @@ export default function RubberLetter({ letter, index, classLetter }) {
                 return styles.primeraLetter
             case 'comunion':
                 return styles.comunionLetter
+            case 'frase':
+                return styles.frase
             default:
                 return new Error()
        }
@@ -38,14 +40,14 @@ export default function RubberLetter({ letter, index, classLetter }) {
     useEffect(() => {
         controls.start({
             opacity: [0, .4, .6, .7, .8, 1],
-            transform: [
+            /* transform: [
                 'scale3d(1, 1, 1)',
                 'scale3d(1.4, .55, 1)',
                 'scale3d(.75, 1.25, 1)',
                 'scale3d(1.25, .85, 1)',
                 'scale3d(.9, 1.05, 1)',
                 'scale3d(1, 1, 1)'
-            ],
+            ], */
             transition: {
                 delay: index * 0.2 + delayWord(),
                 times: [0, .4, .6, .7, .8, .9]
@@ -53,7 +55,7 @@ export default function RubberLetter({ letter, index, classLetter }) {
         })
     }, [])
 
-    const rubberBand = () => {
+    /* const rubberBand = () => {
         controls.start({
             transform: [
                 'scale3d(1, 1, 1)',
@@ -69,16 +71,17 @@ export default function RubberLetter({ letter, index, classLetter }) {
         })
 
         setIsPlaying(true)
-    }
+    } */
 
     return (
         <motion.h1 
             className={getLetterClass()}
             animate={controls}
-            onMouseEnter={() => !isPlaying && rubberBand()}
-            onAnimationComplete={() => setIsPlaying(false)}
+            style={{ fontWeight: index > 10 && 'bold' }}
+            /* onMouseEnter={() => !isPlaying && rubberBand()} */
+            /* onAnimationComplete={() => setIsPlaying(false)} */
         >
-            {letter}
+            {letter === " " ? "\u00A0" : letter }
         </motion.h1>
     )
 }

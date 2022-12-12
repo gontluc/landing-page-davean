@@ -61,7 +61,7 @@
 .heroImg4 {
   width: auto;
   height: 100vh;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg4.jpg');
+  background: var(--herosection-img4-dt);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -95,7 +95,7 @@
 .heroImg6 {
   width: auto;
   height: 100vh;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg6.jpg');
+  background: var(--herosection-img6-dt);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -112,7 +112,7 @@
 .heroImg7 {
   width: auto;
   height: 100vh;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg7.jpg');
+  background: var(--herosection-img7-dt);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -177,6 +177,18 @@
   line-height: 2.5em;
 }
 
+.heroTitleMobile {
+  position: absolute;
+  top: 75vh;
+  left: 0;
+  color: var(--blue);
+  font-size: 40px;
+  overflow: visible;
+  text-align: center;
+  width: 100%;
+  display: none;
+}
+
 @media (max-width: 1800px) {
   .heroImg1 {
     background-position: 38% 40%;
@@ -229,6 +241,7 @@
   .container {
     box-shadow: none;
     background-color: #FFF5EE;
+    height: 86vh;
   }
 
   .heroImg1 {
@@ -249,6 +262,10 @@
   .heroImg4 {
     height: 70vh;
     overflow: hidden;
+    background: var(--herosection-img4-mobile);
+    background-position: 50% 15%;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .heroImg5 {
@@ -259,11 +276,19 @@
   .heroImg6 {
     height: 70vh;
     overflow: hidden;
+    background: var(--herosection-img6-mobile);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .heroImg7 {
     height: 70vh;
     overflow: hidden;
+    background: var(--herosection-img7-mobile);
+    background-position: 50% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .heroTitle {
@@ -302,5 +327,9 @@
     top: 12vh;
     left: 2vw;
     margin-left: 0;
+  }
+
+  .heroTitleMobile {
+    display: block;
   }
 }

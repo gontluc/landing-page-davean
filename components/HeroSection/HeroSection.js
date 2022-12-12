@@ -48,7 +48,7 @@ export default function HeroSection() {
 
     /* Change visibility 'Mi primera comunión' */
 
-    const [showHeroTitle, setShowHeroTitle] = useState(true)
+    const [showHeroTitle, setShowHeroTitle] = useState(false)
 
     function changeHeroTitle(i) {
 
@@ -104,7 +104,10 @@ export default function HeroSection() {
     const word2 = 'primera'.split('')
     const word3 = 'COMUNIÓN'.split('')
 
+    const word4 = 'Mi primera COMUNIÓN'.split('')
+
     return (
+        <>
         <div className={styles.container}>
 
             <div className={styles.heroImg1}></div>
@@ -142,6 +145,15 @@ export default function HeroSection() {
                     })}
                 </div>
             </div>
+
+            <div className={styles.heroTitleMobile} style={{ opacity: showHeroTitle ? 0 : 1 }}>
+                {word4.map((letter, index) => {
+                    return (
+                        <RubberLetter key={index} letter={letter} index={index} classLetter={'frase'}/>
+                    )
+                })}
+            </div>
         </div>
+        </>
     )
 }

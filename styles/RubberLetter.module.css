@@ -23,6 +23,12 @@
   /* animation: rubber-band 1s ease-in-out forwards; */
 }
 
+.frase {
+  display: inline-block;
+  font-weight: 100;
+  font-size: 40px;
+}
+
 /* @keyframes rubber-band {
   from {
     transform: scale3d(1, 1, 1);

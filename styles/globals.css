@@ -18,6 +18,18 @@ html {
 
   --font-1400: 60px;
 
+  --herosection-img4-dt: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg4.jpg');
+
+  --herosection-img4-mobile: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg4mobile.jpg');
+
+  --herosection-img6-dt: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg6.jpg');
+
+  --herosection-img6-mobile: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg6mobile.jpg');
+
+  --herosection-img7-dt: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg7.jpg');
+
+  --herosection-img7-mobile: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg7mobile.jpg');
+
   /* --nav-color: var(--blue); */
 
   scroll-behavior: smooth;

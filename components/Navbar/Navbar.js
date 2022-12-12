@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 import logo from '../../public/images/logo.png'
 
-import { /* useEffect,  */useState, useCallback } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 
 import { HiOutlineMenuAlt2 as Menu } from 'react-icons/hi'
 import { IoClose as Close } from 'react-icons/io5'
@@ -14,7 +14,9 @@ export default function Navbar({ catalogo, packs, preguntas }) {
     /* Hamburguer menu */
     const [toggleMenu, setToggleMenu] = useState(false)
 
-    /* const [onTop, setOnTop] = useState(true) */
+    /* Check if scroll === 0 and mobile*/
+    const [onTop, setOnTop] = useState(true)
+    const [mobile, setMobile] = useState(false)
 
     /*
         Using callback ref, because useRef won't notify us about changes to the current ref value:
@@ -128,15 +130,18 @@ export default function Navbar({ catalogo, packs, preguntas }) {
         }
     }, [appendPreguntasResponsive])
 
-    /* useEffect(() => {
+    /* Check if scroll === 0 and mobile*/
+    useEffect(() => {
         window.addEventListener('scroll', () => {
             if (window.scrollY !== 0 && onTop) {
-                setOnTop(false)
+                window.innerWidth <= 600 && setOnTop(false)
             } else {
-                setOnTop(true)
+                window.innerWidth <= 600 && setOnTop(true)
             }
         })
-    }, []) */
+
+        setMobile(window.innerWidth <= 600)
+    }, [])
 
     function animateNavbar(e, setAppendLi, setAnimating, setLeave, refScroll) {
         setLeave(false)
@@ -185,7 +190,12 @@ export default function Navbar({ catalogo, packs, preguntas }) {
     }
 
     return (
-        <nav className={styles.navbar} /* style={{ backgroundColor: onTop ? 'var(--green)' : 'var(--green-transparent)' }} */>
+        <nav className={styles.navbar} style={{ backgroundColor: 
+            /* Check if scroll === 0 and mobile*/
+            onTop 
+                ? mobile ? 'transparent' : 'var(--green-transparent)' 
+                : 'var(--green-transparent)' 
+        }}>
             <div className={styles.imgContainer}>
                 <Image src={logo} alt="Logo Davean fotografía" priority className={styles.logo}/>
             </div>
