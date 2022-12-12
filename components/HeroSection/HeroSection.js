@@ -111,12 +111,12 @@ export default function HeroSection() {
         <div className={styles.container}>
 
             <div className={styles.heroImg1}></div>
-            <div className={styles.heroImg2}></div>
-            <div className={styles.heroImg3}></div>
+            <div className={styles.heroImg7}></div>
+            <div className={styles.heroImg5}></div>
             <div className={styles.heroImg4}></div>
             <div className={styles.heroImg5}></div>
-            <div className={styles.heroImg6}></div>
-            <div className={styles.heroImg7}></div>
+            <div className={styles.heroImg2}></div>
+            <div className={styles.heroImg3}></div>
 
             <div className={styles.auxContainer}></div>
 
