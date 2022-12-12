@@ -18,17 +18,25 @@ html {
 
   --font-1400: 60px;
 
+  --herosection-img1-dt: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg1.jpg');
+
+  --herosection-img7-dt: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg2.jpg');
+
+  --herosection-img6-dt: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg3.jpg');
+
   --herosection-img4-dt: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg4.jpg');
 
   --herosection-img4-mobile: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg4mobile.jpg');
 
-  --herosection-img6-dt: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg6.jpg');
+  --herosection-img5-dt: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg5.jpg');
 
-  --herosection-img6-mobile: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg6mobile.jpg');
+  --herosection-img2-dt: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg6.jpg');
 
-  --herosection-img7-dt: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg7.jpg');
+  --herosection-img2-mobile: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg6mobile.jpg');
 
-  --herosection-img7-mobile: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg7mobile.jpg');
+  --herosection-img3-dt: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg7.jpg');
+
+  --herosection-img3-mobile: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('../public/images/heroImg7mobile.jpg');
 
   /* --nav-color: var(--blue); */
 
