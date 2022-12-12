@@ -240,7 +240,6 @@
 @media (max-width: 600px) {
   .container {
     box-shadow: none;
-    background-color: #FFF5EE;
     height: 86vh;
   }
 
