@@ -51,7 +51,6 @@ export default function HeroSection() {
     const [showHeroTitle, setShowHeroTitle] = useState(false)
 
     function changeHeroTitle(i) {
-
         /* If max-width:600px then mi primera comunion doesnt disappear */
         if (window.innerWidth > 600) {
             switch (i) {
@@ -59,7 +58,7 @@ export default function HeroSection() {
                     setShowHeroTitle(true)
                     break
                 case 1:
-                    setShowHeroTitle(true)
+                    setShowHeroTitle(false)
                     break
                 case 2:
                     setShowHeroTitle(false)
@@ -68,7 +67,7 @@ export default function HeroSection() {
                     setShowHeroTitle(false)
                     break
                 case 5:
-                    setShowHeroTitle(false)
+                    setShowHeroTitle(true)
                     break
                 case 6:
                     setShowHeroTitle(false)
@@ -122,7 +121,7 @@ export default function HeroSection() {
 
             <div className={styles.heroTitle} style={{ opacity: showHeroTitle ? 1 : 0 }}>
                 <div className={styles.mi}>
-                    {word1.map((letter, index) => {
+                    {showHeroTitle && word1.map((letter, index) => {
                         return (
                             <RubberLetter key={index} letter={letter} index={index} classLetter={'mi'}/>
                         )
@@ -130,7 +129,7 @@ export default function HeroSection() {
                 </div>
 
                 <div className={styles.primera}>
-                    {word2.map((letter, index) => {
+                    {showHeroTitle && word2.map((letter, index) => {
                         return (
                             <RubberLetter key={index} letter={letter} index={index} classLetter={'primera'}/>
                         )
@@ -138,7 +137,7 @@ export default function HeroSection() {
                 </div>
                 
                 <div className={styles.comunion}>
-                    {word3.map((letter, index) => {
+                    {showHeroTitle && word3.map((letter, index) => {
                         return (
                             <RubberLetter key={index} letter={letter} index={index} classLetter={'comunion'}/>
                         )

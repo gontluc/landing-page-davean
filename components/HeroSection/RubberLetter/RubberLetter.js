@@ -77,7 +77,7 @@ export default function RubberLetter({ letter, index, classLetter }) {
         <motion.h1 
             className={getLetterClass()}
             animate={controls}
-            style={{ fontWeight: index > 10 && 'bold' }}
+            style={{ fontWeight: index > 10 ? 'bold' : '100' }}
             /* onMouseEnter={() => !isPlaying && rubberBand()} */
             /* onAnimationComplete={() => setIsPlaying(false)} */
         >

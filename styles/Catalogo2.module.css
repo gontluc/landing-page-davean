@@ -1,0 +1,157 @@
+.section2 {
+    width: 100%;
+    transform: translateY(-13vh);
+    position: relative;
+}
+
+.imgContainer {
+    transform: translateY(400px);
+    filter: blur(8px);
+    opacity: 0;
+}
+
+.catalogo2 {
+    margin-left: 50vw;
+    max-width: 45vw;
+    height: auto;
+}
+
+.frase {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+    font-size: var(--font-big);
+    color: var(--blue);
+}
+
+.frase p {
+    display: inline;
+}
+
+.renovado {
+    position: relative;
+}
+
+.renovado::before {
+    position: absolute;
+    content: '';
+    background-image: url('../public/images/renovado.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    bottom: -50%;
+    left: -6%;
+    z-index: 1;
+}
+
+.break {
+    display: none;
+}
+
+.squares {
+    position: absolute;
+    top: 430px;
+    left: 8vw;
+    display: flex;
+}
+
+.square {
+    width: 5.8vw;
+    height: 5.8vw;
+    border: #fff 1.1vw solid;
+    margin-right: 2vw;
+    opacity: 0;
+}
+
+.square2 {
+    margin-top: 4vw;
+    transform: translateY(-4vw);
+}
+
+.square4 {
+    margin-top: 4vw;
+    transform: translateY(-4vw);
+}
+
+.square5 {
+    margin-top: 8vw;
+    transform: translateY(-8vw);
+}
+
+.square6 {
+    margin-top: 4vw;
+    transform: translateY(-4vw);
+}
+
+@media (max-width: 1800px) {
+    .section2 {
+        transform: translateY(-10vh);
+    }
+
+    .frase {
+        top: 160px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .frase {
+        font-size: var(--font-1400);
+    }
+}
+
+@media (max-width: 1100px) {
+    .section2 {
+        transform: translateY(-8vh);
+    }
+
+    .frase {
+        top: 100px;
+        font-size: var(--font-1100);
+    }
+
+    .squares {
+        top: 280px;
+    }
+}
+
+@media (max-width: 800px) {
+    .section2 {
+        transform: translateY(-4vh);
+    }
+
+    .frase {
+        top: 70px;
+        font-size: var(--font-800);
+    }
+
+    .squares {
+        top: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .frase {
+        font-size: var(--font-600);
+        text-align: left;
+        left: 10vw;
+    }
+
+    .squares {
+        top: 160px;
+    }
+}
+
+@media (max-width: 430px) {
+    .break {
+        display: block;
+    }
+
+    .squares {
+        display: none;
+    }
+}

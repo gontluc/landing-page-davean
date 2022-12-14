@@ -12,7 +12,7 @@
 
 .comunionLetter {
   font-size: 160px;
-  /* -webkit-text-stroke-width: 1px; */
+  -webkit-text-stroke-width: 1px;
   
   /* Acts like letter-spacing */
   margin-right: 0.02em;
