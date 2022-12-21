@@ -226,7 +226,7 @@ export default function Navbar({ catalogo, packs, preguntas }) {
 
             <Menu className={styles.hamMenu} onClick={() => setToggleMenu(!toggleMenu)}/>
 
-            <div className={styles.navResponsive} style={{ opacity: toggleMenu ? 1 : 0 }}>
+            <div className={styles.navResponsive} style={{ opacity: toggleMenu ? 1 : 0, visibility: toggleMenu ? 'visible' : 'hidden' }}>
 
                 <div className={styles.closeContainer} onClick={() => setToggleMenu(false)}>
                     <Close className={styles.close}/>

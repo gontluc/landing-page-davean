@@ -1,3 +1,296 @@
 .container {
-    height: 100vh;
+    width: 100%;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: var(--blue);
+    letter-spacing: 0.03em;
+    font-size: 55px;
+    text-align: center;
+}
+
+.packs {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+}
+
+.pack {
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 40px 0px rgba(5, 46, 80, 0.15);
+    color: var(--blue);
+    opacity: 0;
+}
+
+.packBasico {
+    background-color: rgba(0, 255, 239, 0.2);
+    width: 450px;
+    height: 670px;
+}
+
+.packPro {
+    background-color: rgba(7, 142, 255, 0.4);
+    width: 500px;
+    height: 740px;
+}
+
+.packDeluxe {
+    background-color: rgba(0, 255, 239, 0.2);
+    width: 450px;
+    height: 670px;
+}
+
+.packTitle {
+    font-family: var(--modernline-font);
+    font-size: 45px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.packBasico .packTitle {
+    color: var(--green);
+}
+
+.packDeluxe .packTitle {
+    color: var(--green);
+}
+
+.packPrice {
+    font-family: var(--modernline-font);
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.packBasico .packPrice {
+    color: var(--green);
+}
+
+.packDeluxe .packPrice {
+    color: var(--green);
+}
+
+.packObjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 100%;
+}
+
+.object {
+    text-align: center;
+    font-size: 25px;
+    width: 330px;
+}
+
+.packDeluxe .object {
+    width: 340px;
+}
+
+.objectLogo {
+    width: 24px;
+    height: auto;
+    display: inline;
+    transform: translateY(4px);
+    margin-right: 5px;
+}
+
+.lineBlue {
+    width: 100%;
+    height: 3px;
+    border-radius: 200px;
+    background-color: rgba(5, 46, 80, 0.2);
+}
+
+.lineGreen {
+    width: 100%;
+    height: 3px;
+    border-radius: 200px;
+    background-color: rgba(0, 161, 151, 0.2);
+}
+
+.packBtn {
+    margin-bottom: 40px;
+    background-color: #fff;
+    font-size: 30px;
+    font-family: var(--dk-lemon-font);
+    border-radius: 18px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    padding: 3px 30px;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+}
+
+.packBtn:hover {
+    transform: scale(.95);
+}
+
+.packBtn:active {
+    transform: scale(.85);
+    transition: none;
+}
+
+.packPro .packBtn {
+    margin-bottom: 60px;
+}
+
+.infoContainer {
+    position: relative;
+    margin: 0 12vw;
+}
+
+.arrow {
+    position: absolute;
+    left: -9.8vw;
+    top: -1.2vw;
+    width: 9vw;
+    height: auto;
+}
+
+.info {
+    color: var(--blue);
+    font-size: 25px;
+    text-align: center;
+}
+
+@media (max-width: 1800px) {
+    .container {
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .packs {
+        transform: scale(.9);
+    }
+}
+
+@media (max-width: 1400px) {
+    .title {
+        font-size: 50px;
+    }
+
+    .packs {
+        transform: scale(.8);
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .packs {
+        transform: scale(.7) translateY(-50px);
+    }
+
+    .infoContainer {
+        transform: translateY(-50px);
+    }
+}
+
+@media (max-width: 1100px) {
+    .title {
+        font-size: 45px;
+    }
+
+    .container {
+        margin-top: 120px;
+    }
+
+    .packs {
+        transform: scale(1);
+        flex-direction: column;
+        gap: 60px;
+        margin-top: 50px;
+    }
+
+    .pack {
+        width: 450px;
+        height: 670px;
+    }
+
+    .infoContainer {
+        transform: translateY(-0px);
+        margin-top: 30px;
+    }
+
+    .arrow {
+        top: -.7vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .title {
+        font-size: 40px;
+    }
+
+    .packs {
+        transform: scale(.9) translateY(-50px);
+        margin-top: 0px;
+    }
+
+    .infoContainer {
+        transform: translateY(-110px);
+        margin-top: 0px;
+    }
+
+    .info {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .packs {
+        transform: scale(.8) translateY(-180px);
+    }
+
+    .infoContainer {
+        transform: translateY(-340px);
+    }
+}
+
+@media (max-width: 500px) {
+    .packs {
+        transform: scale(.7) translateY(-380px);
+    }
+
+    .arrow {
+        display: inline;
+        position: static;
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+
+    .infoContainer {
+        transform: translateY(-570px);
+    }
+
+    .info {
+        display: inline;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        margin-top: 100px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .packs {
+        transform: scale(.6) translateY(-640px);
+    }
 }

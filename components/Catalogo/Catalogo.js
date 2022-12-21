@@ -13,11 +13,16 @@ import catalogo2 from '../../public/images/catalogo2.jpg'
 
 import catalogo3 from '../../public/images/catalogo3.jpg'
 
+import Section4 from './Section4/Section4'
+import Section5 from './Section5/Section5'
+import Section6 from './Section6/Section6'
+import Section7 from './Section7/Section7'
+
 import { motion, useAnimationControls } from "framer-motion"
 
 import { useState } from 'react'
 
-export default function Catalogo({ catalogo }) {
+export default function Catalogo({ isMobile, catalogo }) {
 
     const [animatedImg1, setAnimatedImg1] = useState(false)
     const [animatedImg2, setAnimatedImg2] = useState(false)
@@ -79,6 +84,45 @@ export default function Catalogo({ catalogo }) {
                     times: [0, 1],
                     duration: 2,
                     ease: 'easeInOut'
+                }
+            })
+
+            setAnimatedImg(true)
+        }, 500)
+    }
+
+    function animateImg3(controlsImg, setAnimatedImg) {
+        setTimeout(() => {
+            controlsImg.start({
+                transform: [
+                    'translateY(0px)',
+                    'translateY(0px)'
+                ],
+                opacity: [0, 1],
+                transition: {                
+                    times: [0, 1],
+                    duration: 2,
+                    ease: 'easeInOut',
+                }
+            })
+
+            setAnimatedImg(true)
+        }, 500)
+    }
+
+    function animateImg4(controlsImg, setAnimatedImg) {
+        setTimeout(() => {
+            controlsImg.start({
+                transform: [
+                    'translateY(0px)',
+                    'translateY(0px)'
+                ],
+                opacity: [0, 1],
+                transition: {                
+                    times: [0, 1],
+                    duration: 2,
+                    ease: 'easeInOut',
+                    delay: 2
                 }
             })
 
@@ -212,8 +256,13 @@ export default function Catalogo({ catalogo }) {
 
             </section>
 
-            
+            <Section4 isMobile={isMobile} animateImg3={animateImg3} animateImg4={animateImg4}/>
 
+            <Section5 isMobile={isMobile} animateImg={animateImg} animateImg4={animateImg4}/>
+
+            <Section6 isMobile={isMobile} />
+
+            <Section7 isMobile={isMobile} />
         </div>
     )
 }

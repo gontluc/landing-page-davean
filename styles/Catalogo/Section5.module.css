@@ -1,0 +1,181 @@
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fraseContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 22vw;
+}
+
+.frase {
+    font-size: var(--font-big);
+    color: var(--blue);
+    text-align: center;
+}
+
+.imgs {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    transform: translateY(-300px);
+}
+
+.imgContainer1 {
+    transform: translateY(400px);
+    z-index: 1;
+    opacity: 0;
+    filter: blur(8px);
+}
+
+.imgContainer2 {
+    opacity: 0;
+}
+
+.img1 {
+   max-width: 36vw;
+   height: auto;
+   box-shadow: 40px 40px 15px 10px rgba(0, 0, 0, .25);
+}
+
+.img2 {
+    max-width: 36vw;
+    height: auto;
+    margin-top: 400px;
+}
+
+@media (max-width: 1800px) {
+    .fraseContainer {
+        margin-right: 20vw;
+    }
+
+    .imgs {
+        transform: translateY(-200px);
+        margin-bottom: 100px;
+    }
+
+    .img2 {
+        margin-top: 300px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .fraseContainer {
+        margin-right: 18vw;
+    }
+}
+
+@media (max-width: 1400px) {
+    .section {
+        transform: translateY(-120px);
+    }
+
+    .frase {
+        font-size: var(--font-1400);
+    }
+
+    .imgs {
+        transform: translateY(-140px);
+        margin-bottom: 60px;
+    }
+
+    .img2 {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .section {
+        transform: translateY(-160px);
+    }
+
+    .fraseContainer {
+        margin-right: 16vw;
+    }
+
+    .frase {
+        font-size: var(--font-1100);
+    }
+
+    .imgs {
+        transform: translateY(-100px);
+        margin-bottom: 60px;
+    }
+
+    .img2 {
+        margin-top: 140px;
+    }
+}
+
+@media (max-width: 900px) {
+    .fraseContainer {
+        margin-right: 14vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .frase {
+        font-size: var(--font-800);
+    }
+}
+
+@media (max-width: 769px) {
+    .section {
+        transform: translateY(100px);
+        margin-bottom: 220px;
+    }
+
+    .img1 {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .fraseContainer {
+        margin-right: 13vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .frase {
+        font-size: var(--font-600);
+    }
+}
+
+@media (max-width: 520px) {
+    .fraseContainer {
+        margin-right: 11vw;
+    }
+
+    .imgs {
+        gap: 20px;
+    }
+
+    .img1 {
+        max-width: 42vw;
+    }
+     
+    .img2 {
+        max-width: 42vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .fraseContainer {
+        margin-right: 6vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .frase {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 350px) {
+    .fraseContainer {
+        margin-right: 2vw;
+    }
+}

@@ -4,17 +4,27 @@ import Navbar from '../components/Navbar/Navbar'
 import HeroSection from '../components/HeroSection/HeroSection'
 import Frase from '../components/Frase/Frase'
 import Catalogo from '../components/Catalogo/Catalogo'
+import Plazas from '../components/Plazas/Plazas'
 import Packs from '../components/Packs/Packs'
 import Preguntas from '../components/Preguntas/Preguntas'
 import Footer from '../components/Footer/Footer'
 
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export default function Home() {
 
   const catalogo = useRef(null)
   const packs = useRef(null)
   const preguntas = useRef(null)
+
+  const [isMobile, setMobile] = useState(false)
+
+  useEffect(() => {
+    setMobile(window.innerWidth <= 769)
+    window.addEventListener('resize', () => {
+      setMobile(window.innerWidth <= 769)
+    })
+  }, [])
 
   return (
     <>
@@ -31,9 +41,11 @@ export default function Home() {
 
         <Frase />
 
-        <Catalogo catalogo={catalogo}/>
+        <Catalogo isMobile={isMobile} catalogo={catalogo}/>
 
-        <Packs packs={packs}/>
+        <Plazas isMobile={isMobile}/>
+
+        <Packs isMobile={isMobile} packs={packs}/>
 
         <Preguntas preguntas={preguntas}/>
       </main>

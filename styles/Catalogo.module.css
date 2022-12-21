@@ -1,6 +1,6 @@
 .container {
-    background: linear-gradient(180deg, #FFF5EE 0%, rgba(254, 232, 216, 0) 78.47%);
-    background-color: #FFF5EE;/*  */
+    /* background: linear-gradient(180deg, #FFF5EE 0%, rgba(254, 232, 216, 0) 78.47%); */
+    background-color: #FFF5EE;
     scroll-margin-top: 110px;
 }
 

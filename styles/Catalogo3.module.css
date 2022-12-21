@@ -20,23 +20,32 @@
 @media (max-width: 1800px) {
     .section3 {
         transform: translateY(-250px);
+        margin-bottom: 100px;
     }
 }
 
 @media (max-width: 1400px) {
     .section3 {
         transform: translateY(-150px);
+        margin-bottom: 200px;
     }
 }
 
 @media (max-width: 800px) {
     .section3 {
         transform: translateY(-100px);
+        margin-bottom: 250px;
     }
 
     .catalogo3 {
         max-width: 100%;
         box-shadow: none;
+    }
+}
+
+@media (max-width: 769px) {
+    .section3 {
+        margin-bottom: 0;
     }
 }
 

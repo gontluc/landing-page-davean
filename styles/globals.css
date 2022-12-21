@@ -16,9 +16,9 @@ html {
   --hero-duration: calc(5s * 7);
   --hero-delay: 5s;
 
-  --font-big: 60px;
-  --font-1400: 50px;
-  --font-1100: 40px;
+  --font-big: 50px;
+  --font-1400: 40px;
+  --font-1100: 35px;
   --font-800: 30px;
   --font-600: 25px;
 
