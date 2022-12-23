@@ -7,6 +7,7 @@ import Catalogo from '../components/Catalogo/Catalogo'
 import Plazas from '../components/Plazas/Plazas'
 import Packs from '../components/Packs/Packs'
 import Preguntas from '../components/Preguntas/Preguntas'
+import Reviews from '../components/Reviews/Reviews'
 import Footer from '../components/Footer/Footer'
 
 import { useEffect, useRef, useState } from 'react'
@@ -47,7 +48,9 @@ export default function Home() {
 
         <Packs isMobile={isMobile} packs={packs}/>
 
-        <Preguntas preguntas={preguntas}/>
+        <Preguntas isMobile={isMobile} preguntas={preguntas}/>
+
+        <Reviews isMobile={isMobile}/>
       </main>
       
       <Footer />
