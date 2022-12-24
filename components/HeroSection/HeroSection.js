@@ -4,7 +4,7 @@ import RubberLetter from './RubberLetter/RubberLetter'
 
 import { useEffect, useState } from 'react'
 
-export default function HeroSection() {
+export default function HeroSection({ header }) {
 
     /* Change nav li color based on current img displaying */
 
@@ -107,7 +107,7 @@ export default function HeroSection() {
 
     return (
         <>
-        <div className={styles.container}>
+        <div className={styles.container} ref={header}>
 
             <div className={styles.heroImg1}></div>
             <div className={styles.heroImg7}></div>

@@ -14,6 +14,7 @@ import { useEffect, useRef, useState } from 'react'
 
 export default function Home() {
 
+  const header = useRef(null)
   const catalogo = useRef(null)
   const packs = useRef(null)
   const preguntas = useRef(null)
@@ -38,7 +39,7 @@ export default function Home() {
       <Navbar catalogo={catalogo} packs={packs} preguntas={preguntas}/>
 
       <main>
-        <HeroSection />
+        <HeroSection header={header}/>
 
         <Frase />
 
@@ -53,7 +54,7 @@ export default function Home() {
         <Reviews isMobile={isMobile}/>
       </main>
       
-      <Footer />
+      <Footer header={header}/>
     </>
   )
 }

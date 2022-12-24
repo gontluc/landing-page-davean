@@ -1,5 +1,74 @@
 .container {
-    height: 20vh;
+    min-height: 30vh;
     background-color: var(--blue);
     color: #fff;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.topFooter {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px auto;
+}
+
+.estudio {
+    text-align: center;
+    width: 20vw;
+}
+
+.middle {
+    width: 20vw;
+    text-align: center;
+}
+
+.redesContainer {
+
+}
+
+.red {
+
+}
+
+.phone {
+    
+}
+
+.right {
+    width: 20vw;
+    text-align: center;
+}
+
+.arrowContainer {
+    transition: .5s ease-in-out all;
+}
+
+.arrow {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+}
+
+.arrow:active {
+    transform: scale(.9);
+}
+
+.line {
+    background-color: rgba(0, 161, 150, 0.2);
+    width: 90vw;
+    height: 3px;
+    border-radius: 200px;
+    margin: 20px auto;
+}
+
+.bottomFooter {
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
 }
