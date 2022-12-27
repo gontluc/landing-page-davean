@@ -1,5 +1,5 @@
 .container {
-    min-height: 30vh;
+    min-height: 45vh;
     background-color: var(--blue);
     color: #fff;
     font-size: 30px;
@@ -9,11 +9,11 @@
 }
 
 .topFooter {
-    width: 90vw;
+    width: 85vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 80px auto;
+    margin: 50px auto;
 }
 
 .estudio {
@@ -24,14 +24,38 @@
 .middle {
     width: 20vw;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
 }
 
 .redesContainer {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .red {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
+.red div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redIcon {
+    width: 34px;
+    height: auto;
+    margin-top: 8px;
 }
 
 .phone {
@@ -59,16 +83,134 @@
 
 .line {
     background-color: rgba(0, 161, 150, 0.2);
-    width: 90vw;
+    width: 85vw;
     height: 3px;
     border-radius: 200px;
     margin: 20px auto;
 }
 
 .bottomFooter {
-    width: 85vw;
+    width: 80vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px auto;
+}
+
+.bottomLeftContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+}
+
+.bottomFooter p {
+    font-family: var(--modernline-font);
+    display: inline;
+    font-size: .9em;
+}
+
+.bottomRightContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.bottomRightContainer p {
+    font-family: var(--poppins-font);
+}
+
+@media (max-width: 1600px) {
+    .container {
+        font-size: 25px;
+    }
+
+    .arrow {
+        width: 70px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .container {
+        font-size: 22px;
+    }
+
+    .middle {
+        gap: 40px;
+    }
+
+    .arrow {
+        width: 60px;
+    }
+
+    .bottomLeftContainer {
+        gap: 5px;
+        font-size: 20px;
+    }
+
+    .bottomRightContainer {
+        gap: 5px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .topFooter {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 50px;
+    }
+
+    .estudio {
+        width: 320px;
+    }
+
+    .middle {
+        width: 320px;
+    }
+
+    .right {
+        width: 320px;
+    }
+}
+
+@media (max-width: 769px) {
+    .container {
+        font-size: 20px;
+    }
+
+    .topFooter {
+        margin-bottom: 20px;
+        row-gap: 40px;
+    }
+
+    .middle {
+        gap: 20px;
+    }
+
+    .redesContainer {
+        gap: 0;
+    }
+
+    .redIcon {
+        width: 28px;
+        margin-top: px;
+    }
+
+    .bottomLeftContainer {
+        font-size: 18px;
+    }
+
+    .bottomRightContainer {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .bottomFooter {
+        flex-direction: column;
+        gap: 20px;
+    }
 }

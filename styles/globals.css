@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -12,6 +14,7 @@ html {
   --adele-font: 'Adele', sans-serif;
   --dk-lemon-font: 'DK Lemon Yellow Sun', sans-serif;
   --modernline-font: 'Modernline', sans-serif;
+  --poppins-font: 'Poppins', sans-serif;
 
   --hero-duration: calc(5s * 7);
   --hero-delay: 5s;

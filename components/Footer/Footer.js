@@ -3,6 +3,8 @@ import styles from '../../styles/Footer.module.css'
 import Image from 'next/image'
 
 import arrow from '../../public/images/arrowTop.png'
+import ig from '../../public/images/igIcon.png'
+import fb from '../../public/images/fbIcon.png'
 
 import { useRef, useEffect } from 'react'
 
@@ -34,7 +36,7 @@ export default function Footer({ header }) {
             setTimeout(() => {
                 arrowUp.current.style.transform = "translateY(0)";
             }, 2500);
-        }, 4500);
+        }, 7000);
     }, [])
 
     return (
@@ -48,8 +50,14 @@ export default function Footer({ header }) {
 
                 <div className={styles.middle}>
                     <div className={styles.redesContainer}>
-                        <div className={styles.red}>@comuniones_davean</div>
-                        <div className={styles.red}>@daveanphotography</div>
+                        <div className={styles.red}>
+                            <Image className={styles.redIcon} src={ig} alt='instagram' priority quality={100}/>
+                            <div>@comuniones_davean</div>
+                        </div>
+                        <div className={styles.red}>
+                            <Image className={styles.redIcon} src={fb} alt='facebook' priority quality={100}/>
+                            <div>@daveanphotography</div>
+                        </div>
                     </div>
 
                     <div className={styles.phone}>Info y Reservas: 691 041 289</div>
@@ -64,7 +72,18 @@ export default function Footer({ header }) {
 
             <div className={styles.line}></div>
 
-            <div className={styles.bottomFooter}>a</div>
+            <div className={styles.bottomFooter}>
+                <div className={styles.bottomLeftContainer}>
+                    <div>2022</div> 
+                    <div>&copy;</div> 
+                    <p>Comuniones Davean</p>
+                </div>
+
+                <div className={styles.bottomRightContainer}>
+                    <div>by</div>
+                    <p>Lucas Gontijo</p>
+                </div>
+            </div>
         </footer>
     )
 }

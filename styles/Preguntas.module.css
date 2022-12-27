@@ -104,6 +104,10 @@
     .pregunta {
         width: 620px;
     }
+
+    .preguntasContainer {
+        display: none;
+    }
     
     .respuesta {
         width: 620px;
