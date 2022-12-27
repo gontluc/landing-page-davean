@@ -73,24 +73,24 @@ ul {
 
 @font-face {
   font-family: 'Modernline';
-  src: url('/styles/fonts/modernline-webfont.woff2') format('woff2'),
-       url('/styles/fonts/modernline-webfont.woff') format('woff');
+  src: url('/fonts/modernline-webfont.woff2') format('woff2'),
+       url('/fonts/modernline-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
    font-family: 'DK Lemon Yellow Sun';
-   src: url('/styles/fonts/dk_lemon_yellow_sun-webfont.woff2') format('woff2'),
-        url('/styles/fonts/dk_lemon_yellow_sun-webfont.woff') format('woff');
+   src: url('/fonts/dk_lemon_yellow_sun-webfont.woff2') format('woff2'),
+        url('/fonts/dk_lemon_yellow_sun-webfont.woff') format('woff');
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: 'Adele';
-   src: url('/styles/fonts/adele-light-webfont-webfont.woff2') format('woff2'),
-        url('/styles/fonts/adele-light-webfont-webfont.woff') format('woff');
+   src: url('/fonts/adele-light-webfont-webfont.woff2') format('woff2'),
+        url('/fonts/adele-light-webfont-webfont.woff') format('woff');
    font-weight: normal;
    font-style: normal;
 }
