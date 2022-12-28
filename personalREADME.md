@@ -16,7 +16,7 @@
 
 - compress imgs webp or jpg
 
-- add link to logo
+- add link to logo 
 
 - cta btn --> Davean's whatsup script
 
@@ -27,14 +27,6 @@
 # Tomorrow 
 
 - do svg navbar img (already downloaded) (ask him if he likes it)
-
-- do custom scrollbar and cursor
-
-- do hovers navbar
-
-- next img warnings console
-
-- add nextjs links navbar as in portfolio
 
 <br>
 
