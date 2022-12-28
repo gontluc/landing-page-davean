@@ -51,11 +51,11 @@ export default function Footer({ header }) {
                 <div className={styles.middle}>
                     <div className={styles.redesContainer}>
                         <div className={styles.red}>
-                            <Image className={styles.redIcon} src={ig} alt='instagram' priority quality={100}/>
+                            <Image className={styles.redIcon} src={ig} alt='instagram' quality={100}/>
                             <div>@comuniones_davean</div>
                         </div>
                         <div className={styles.red}>
-                            <Image className={styles.redIcon} src={fb} alt='facebook' priority quality={100}/>
+                            <Image className={styles.redIcon} src={fb} alt='facebook' quality={100}/>
                             <div>@daveanphotography</div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ export default function Footer({ header }) {
 
                 <div className={styles.right}>
                     <div className={styles.arrowContainer} ref={arrowUp} onClick={() => header.current.scrollIntoView()}>
-                        <Image className={styles.arrow} src={arrow} alt='ir al principio de página' priority quality={100}/>
+                        <Image className={styles.arrow} src={arrow} alt='ir al principio de página' quality={100}/>
                     </div>
                 </div>
             </div>

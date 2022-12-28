@@ -98,14 +98,14 @@ export default function Packs({ isMobile, packs }) {
 
                     <div className={styles.packObjects}>
                         <div className={styles.object}>
-                            <Image src={packs1green} className={styles.objectLogo} alt='logo sesiones' quality={100} priority/>
+                            <Image src={packs1green} className={styles.objectLogo} alt='logo sesiones' quality={100}/>
                             Sesión en estudio - 2 decorados
                         </div>
 
                         <div className={styles.lineGreen}></div>
 
                         <div className={styles.object}>
-                            <Image src={packs2green} className={styles.objectLogo} alt='logo fotos' quality={100} priority/>
+                            <Image src={packs2green} className={styles.objectLogo} alt='logo fotos' quality={100}/>
                             10 fotos digitales e impresas en 15x20 cm a elegir
                         </div>
                     </div>
@@ -120,20 +120,20 @@ export default function Packs({ isMobile, packs }) {
 
                     <div className={styles.packObjects}>
                         <div className={styles.object}>
-                            <Image src={packs1blue} className={styles.objectLogo} alt='logo sesiones' quality={100} priority/>
+                            <Image src={packs1blue} className={styles.objectLogo} alt='logo sesiones' quality={100}/>
                             Sesión en estudio - 3 decorados
                         </div>
                         <div className={styles.lineBlue}></div>
 
                         <div className={styles.object}>
-                            <Image src={packs2blue} className={styles.objectLogo} alt='logo fotos' quality={100} priority/>
+                            <Image src={packs2blue} className={styles.objectLogo} alt='logo fotos' quality={100}/>
                             40 fotos digitales a elegir en un pendrive
                         </div>
 
                         <div className={styles.lineBlue}></div>
 
                         <div className={styles.object}>
-                            <Image src={packs3blue} className={styles.objectLogo} alt='logo álbum' quality={100} priority/>
+                            <Image src={packs3blue} className={styles.objectLogo} alt='logo álbum' quality={100}/>
                             Álbum 30x30 cm con 8 láminas
                         </div>
                     </div>
@@ -148,28 +148,28 @@ export default function Packs({ isMobile, packs }) {
 
                     <div className={styles.packObjects}>
                         <div className={styles.object}>
-                            <Image src={packs1green} className={styles.objectLogo} alt='logo sesiones' quality={100} priority/>
+                            <Image src={packs1green} className={styles.objectLogo} alt='logo sesiones' quality={100}/>
                             Sesión en estudio y exteriores
                         </div>
 
                         <div className={styles.lineGreen}></div>
 
                         <div className={styles.object}>
-                            <Image src={packs2green} className={styles.objectLogo} alt='logo fotos' quality={100} priority/>
+                            <Image src={packs2green} className={styles.objectLogo} alt='logo fotos' quality={100}/>
                             60 fotos digitales a elegir en un pendrive
                         </div>
 
                         <div className={styles.lineGreen}></div>
 
                         <div className={styles.object}>
-                            <Image src={packs3green} className={styles.objectLogo} alt='logo álbum' quality={100} priority/>
+                            <Image src={packs3green} className={styles.objectLogo} alt='logo álbum' quality={100}/>
                             Álbum 30x30 cm con 10 láminas entregado con caja de madera con foto
                         </div>
 
                         <div className={styles.lineGreen}></div>
 
                         <div className={styles.object}>
-                            <Image src={packs4green} className={styles.objectLogo} alt='logo recordatorias' quality={100} priority/>
+                            <Image src={packs4green} className={styles.objectLogo} alt='logo recordatorias' quality={100}/>
                             10 recordatorias en 10x15 cm de regalo
                         </div>
                     </div>
@@ -179,7 +179,7 @@ export default function Packs({ isMobile, packs }) {
             </div>
 
             <div className={styles.infoContainer}>
-                <Image className={styles.arrow} src={arrow} alt='flecha' quality={100} priority/>
+                <Image className={styles.arrow} src={arrow} alt='flecha' quality={100}/>
                 <p className={styles.info}>En todos los packs puedes adquirir fotos digitales e impresas adicionales a un precio especial. Las sesiones en exteriores fuera de Sevilla llevan un recargo adicional.</p>
             </div>
         </div>

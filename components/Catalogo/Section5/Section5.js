@@ -37,7 +37,6 @@ export default function Section5({ isMobile, animateImg, animateImg4 }) {
                         src={img1} 
                         className={styles.img1} 
                         quality={100} 
-                        priority
                     />
                 </motion.div>
 
@@ -51,7 +50,6 @@ export default function Section5({ isMobile, animateImg, animateImg4 }) {
                         src={img2} 
                         className={styles.img2} 
                         quality={100} 
-                        priority
                     />
                 </motion.div>
             </div>

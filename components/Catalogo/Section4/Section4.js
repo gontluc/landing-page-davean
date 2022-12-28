@@ -37,7 +37,6 @@ export default function Section4({ isMobile, animateImg3, animateImg4 }) {
                     src={img2} 
                     className={styles.img2} 
                     quality={100} 
-                    priority
                 />
             </motion.div>
 
@@ -47,7 +46,6 @@ export default function Section4({ isMobile, animateImg3, animateImg4 }) {
                     src={leaves} 
                     className={styles.leaves} 
                     quality={100} 
-                    priority
                 />
 
                 <div className={styles.fraseContainer}>
@@ -66,7 +64,6 @@ export default function Section4({ isMobile, animateImg3, animateImg4 }) {
                     src={img1} 
                     className={styles.img1} 
                     quality={100} 
-                    priority
                 />
             </motion.div>
             
@@ -81,7 +78,6 @@ export default function Section4({ isMobile, animateImg3, animateImg4 }) {
                         src={leaves} 
                         className={stylesr.leaves1} 
                         quality={100} 
-                        priority
                     />
 
                     <div className={stylesr.fraseContainer}>
@@ -93,7 +89,6 @@ export default function Section4({ isMobile, animateImg3, animateImg4 }) {
                         src={leaves} 
                         className={stylesr.leaves2} 
                         quality={100} 
-                        priority
                     />
                 </div>
 
@@ -108,7 +103,6 @@ export default function Section4({ isMobile, animateImg3, animateImg4 }) {
                             src={img2} 
                             className={stylesr.img2} 
                             quality={100} 
-                            priority
                         />
                     </motion.div>
 
@@ -122,7 +116,6 @@ export default function Section4({ isMobile, animateImg3, animateImg4 }) {
                             src={img1} 
                             className={stylesr.img1} 
                             quality={100} 
-                            priority
                         />
                     </motion.div>
                 </div>

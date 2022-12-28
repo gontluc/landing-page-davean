@@ -27,7 +27,6 @@ export default function Section6({ isMobile }) {
                     src={flower} 
                     className={styles.flower} 
                     quality={100} 
-                    priority
                 />
 
                 <p className={styles.frase}>y reflejando la esencia y <br /> personalidad de cada peque</p>
@@ -37,7 +36,6 @@ export default function Section6({ isMobile }) {
                     src={wheat} 
                     className={styles.wheat} 
                     quality={100} 
-                    priority
                 />
             </div>
 
@@ -49,7 +47,6 @@ export default function Section6({ isMobile }) {
                         src={l1} 
                         className={styles.img} 
                         quality={100} 
-                        priority
                     />
 
                     <Image 
@@ -57,7 +54,6 @@ export default function Section6({ isMobile }) {
                         src={l2} 
                         className={styles.img} 
                         quality={100} 
-                        priority
                     />
 
                     <Image 
@@ -65,7 +61,6 @@ export default function Section6({ isMobile }) {
                         src={l3} 
                         className={styles.img} 
                         quality={100} 
-                        priority
                     />
 
                     <Image 
@@ -73,7 +68,6 @@ export default function Section6({ isMobile }) {
                         src={l4} 
                         className={styles.img} 
                         quality={100} 
-                        priority
                     />
                 </div>
 
@@ -83,7 +77,6 @@ export default function Section6({ isMobile }) {
                         src={r1} 
                         className={styles.img} 
                         quality={100} 
-                        priority
                     />
 
                     <Image 
@@ -91,7 +84,6 @@ export default function Section6({ isMobile }) {
                         src={r2} 
                         className={styles.img} 
                         quality={100} 
-                        priority
                     />
 
                     <Image 
@@ -99,7 +91,6 @@ export default function Section6({ isMobile }) {
                         src={r3} 
                         className={styles.img} 
                         quality={100} 
-                        priority
                     />
 
                     <Image 
@@ -107,7 +98,6 @@ export default function Section6({ isMobile }) {
                         src={r4} 
                         className={styles.img} 
                         quality={100} 
-                        priority
                     />
 
                     <Image 
@@ -115,7 +105,6 @@ export default function Section6({ isMobile }) {
                         src={r5} 
                         className={styles.img} 
                         quality={100} 
-                        priority
                     />
                 </div>
             </div>

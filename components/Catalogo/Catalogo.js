@@ -194,7 +194,6 @@ export default function Catalogo({ isMobile, catalogo }) {
                         src={catalogo2} 
                         className={styles2.catalogo2} 
                         quality={100} 
-                        priority
                     />
                 </motion.div>
 
@@ -250,7 +249,6 @@ export default function Catalogo({ isMobile, catalogo }) {
                         src={catalogo3} 
                         className={styles3.catalogo3} 
                         quality={100} 
-                        priority
                     />
                 </motion.div>
 

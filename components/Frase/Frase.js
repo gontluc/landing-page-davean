@@ -35,8 +35,8 @@ export default function Frase() {
         <div className={styles.container}>
             <h2 className={styles.frase}>
                 La primera comunión es un bonito <br /> recuerdo que guardar
-                <Image alt='abre comilla' src={abre} className={styles.abreComilla} priority/>
-                <Image alt='cierra comilla' src={cierra} className={styles.cierraComilla} priority/>
+                <Image alt='abre comilla' src={abre} className={styles.abreComilla}/>
+                <Image alt='cierra comilla' src={cierra} className={styles.cierraComilla}/>
             </h2>
             <motion.div 
                 className={styles.linea} 
