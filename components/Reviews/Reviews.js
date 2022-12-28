@@ -5,12 +5,12 @@ import Image from 'next/image'
 import waves from '../../public/images/waveReviews.png'
 import comillas from '../../public/images/comillasReviews.png'
 import stars from '../../public/images/starsReviews.png'
-import ig1 from '../../public/images/ig1.png'
-import ig2 from '../../public/images/ig2.png'
-import ig3 from '../../public/images/ig3.png'
-import ig4 from '../../public/images/ig4.png'
-import ig5 from '../../public/images/ig5.png'
-import ig6 from '../../public/images/ig6.png'
+import ig1 from '../../public/images/ig1.jpg'
+import ig2 from '../../public/images/ig2.jpg'
+import ig3 from '../../public/images/ig3.jpg'
+import ig4 from '../../public/images/ig4.jpg'
+import ig5 from '../../public/images/ig5.jpg'
+import ig6 from '../../public/images/ig6.jpg'
 
 export default function Reviews({ isMobile }) {
     return (
