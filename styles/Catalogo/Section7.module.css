@@ -12,6 +12,7 @@
     /* transform: translateY(-250px); */
     background: linear-gradient(0deg, var(--aux-gradient), var(--aux-gradient)), url('../../public/images/section7.jpg');
     background-repeat: no-repeat;
+    background-size: 100%;
     /* background-size: cover; */
     /* -o-background-size: cover;
     -moz-background-size: cover;
