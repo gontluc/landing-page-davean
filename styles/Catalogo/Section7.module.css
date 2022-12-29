@@ -14,9 +14,9 @@
     background: linear-gradient(0deg, var(--aux-gradient), var(--aux-gradient)), url('../../public/images/section7.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* -o-background-size: cover;
+    -o-background-size: cover;
     -moz-background-size: cover;
-    -webkit-background-size: cover; */
+    -webkit-background-size: cover;
     background-position: 53% 0%;
     height: 200vh;
     background-attachment: fixed;
@@ -32,6 +32,12 @@
     width: 100%;
     text-align: center;
 }
+
+/* @media (max-width: @iphone-screen) {
+    .section {
+        background-attachment: scroll;
+    }
+} */
 
 @media (max-width: 1400px) {
     .frase {
