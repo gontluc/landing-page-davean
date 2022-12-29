@@ -6,7 +6,7 @@
 
 .section {
     --aux-gradient: rgba(0, 0, 0, 0);
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,9 +14,9 @@
     background: linear-gradient(0deg, var(--aux-gradient), var(--aux-gradient)), url('../../public/images/section7.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    -o-background-size: cover;
+    /* -o-background-size: cover;
     -moz-background-size: cover;
-    -webkit-background-size: cover;
+    -webkit-background-size: cover; */
     background-position: 53% 0%;
     height: 100%;
     background-attachment: fixed;
