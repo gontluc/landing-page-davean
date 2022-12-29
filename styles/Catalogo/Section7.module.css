@@ -12,11 +12,11 @@
     /* transform: translateY(-250px); */
     background: linear-gradient(0deg, var(--aux-gradient), var(--aux-gradient)), url('../../public/images/section7.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-    -o-background-size: cover;
+    /* background-size: cover; */
+    /* -o-background-size: cover;
     -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-position: center;
+    -webkit-background-size: cover; */
+    background-position: 53% 0%;
     height: 200vh;
     background-attachment: fixed;
     /* filter: blur(10px); */
