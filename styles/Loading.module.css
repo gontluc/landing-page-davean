@@ -1,0 +1,118 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.imgs {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    animation: correct forwards .8s ease-in-out;
+}
+
+.camara {
+    max-width: 300px;
+    height: auto;
+    animation: spin forwards .8s ease-in-out;
+}
+
+.boton {
+    position: absolute;
+    max-width: 300px;
+    height: auto;
+    top: 0;
+    left: 0;
+    animation: spin-btn forwards 1.6s ease-in-out;
+}
+
+.d {
+    position: absolute;
+    max-width: 300px;
+    height: auto;
+    top: 0;
+    left: 0;
+    animation: appears forwards .4s ease-in-out;
+    animation-delay: 1.6s;
+    opacity: 0;
+}
+
+.title {
+    font-family: var(--adele-font);
+    font-weight: 100;
+    font-size: 65px;
+    color: var(--blue);
+    white-space: nowrap;
+}
+
+@keyframes correct {
+    from {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(3px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-btn {
+    from {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    70% {
+        transform: rotate(360deg) translateY(0px);
+    }
+
+    90% {
+        transform: rotate(360deg) translateY(-40px);
+    }
+
+    to {
+        transform: rotate(360deg) translateY(0px);
+    }
+}
+
+@keyframes appears {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1400px) {
+    .container {
+        transform: scale(.7);
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        transform: scale(.5);
+    }
+}

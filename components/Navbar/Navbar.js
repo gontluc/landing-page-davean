@@ -16,7 +16,7 @@ export default function Navbar({ catalogo, packs, preguntas }) {
 
     /* Check if scroll === 0 and mobile*/
     const [onTop, setOnTop] = useState(true)
-    const [mobile, setMobile] = useState(false)
+    const [mobile, setMobile] = useState(true)
 
     /*
         Using callback ref, because useRef won't notify us about changes to the current ref value:
@@ -192,8 +192,8 @@ export default function Navbar({ catalogo, packs, preguntas }) {
     return (
         <nav className={styles.navbar} style={{ backgroundColor: 
             /* Check if scroll === 0 and mobile*/
-            onTop 
-                ? mobile ? 'transparent' : 'var(--green-transparent)' 
+            mobile 
+                ? onTop ? 'transparent' : 'var(--green-transparent)' 
                 : 'var(--green-transparent)' 
         }}>
             <div className={styles.imgContainer}>

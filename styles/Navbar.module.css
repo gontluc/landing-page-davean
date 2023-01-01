@@ -8,7 +8,6 @@
   top: 0;
   transition: all .8s ease-in-out;
   z-index: 3;
-  background-color: var(--green-transparent);
 }
 
 .imgContainer {
@@ -258,7 +257,6 @@
 }
 
 @media (max-width: 750px) {
-
   .navbar {
     height: 60px;
   }

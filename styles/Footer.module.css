@@ -28,7 +28,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 60px;
+    /* gap: 60px; */
 }
 
 .redesContainer {
@@ -59,7 +59,7 @@
 }
 
 .phone {
-    
+    color: #FFCF26;
 }
 
 .right {
@@ -95,13 +95,11 @@
     justify-content: space-between;
     align-items: center;
     margin: 20px auto;
+    font-size: 32px;
 }
 
 .bottomLeftContainer {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 24px;
+    text-align: center;
 }
 
 .bottomFooter p {
@@ -114,8 +112,11 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 32px;
     cursor: pointer;
+    background: linear-gradient(89.98deg, #714E06 -1.7%, #FFCF26 49.2%, #714E06 98.32%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .bottomRightContainer p {
@@ -137,22 +138,20 @@
         font-size: 22px;
     }
 
-    .middle {
+    /* .middle {
         gap: 40px;
-    }
+    } */
 
     .arrow {
         width: 60px;
     }
 
-    .bottomLeftContainer {
-        gap: 5px;
-        font-size: 20px;
+    .bottomFooter {
+        font-size: 25px;
     }
 
     .bottomRightContainer {
         gap: 5px;
-        font-size: 25px;
     }
 }
 
@@ -186,9 +185,9 @@
         row-gap: 40px;
     }
 
-    .middle {
+    /* .middle {
         gap: 20px;
-    }
+    } */
 
     .redesContainer {
         gap: 0;
@@ -199,11 +198,7 @@
         margin-top: px;
     }
 
-    .bottomLeftContainer {
-        font-size: 18px;
-    }
-
-    .bottomRightContainer {
+    .bottomFooter {
         font-size: 18px;
     }
 }

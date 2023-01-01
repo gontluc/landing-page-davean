@@ -2,14 +2,16 @@ import styles from '../../styles/Packs.module.css'
 
 import Image from 'next/image'
 
-import packs1green from '../../public/images/packs1green.png'
-import packs2green from '../../public/images/packs2green.png'
-import packs3green from '../../public/images/packs3green.png'
-import packs4green from '../../public/images/packs4green.png'
+import packs1black from '../../public/images/packs1black.png'
+import packs2black from '../../public/images/packs2black.png'
+import packs3black from '../../public/images/packs3black.png'
+import packs4black from '../../public/images/packs4black.png'
 
 import packs1blue from '../../public/images/packs1blue.png'
 import packs2blue from '../../public/images/packs2blue.png'
 import packs3blue from '../../public/images/packs3blue.png'
+
+import goldLines from '../../public/images/goldLines.png'
 
 import arrow from '../../public/images/arrowPacks.png'
 
@@ -98,14 +100,14 @@ export default function Packs({ isMobile, packs }) {
 
                     <div className={styles.packObjects}>
                         <div className={styles.object}>
-                            <Image src={packs1green} className={styles.objectLogo} alt='logo sesiones' quality={100}/>
+                            <Image src={packs1blue} className={styles.objectLogo} alt='logo sesiones' quality={100}/>
                             Sesión en estudio - 2 decorados
                         </div>
 
-                        <div className={styles.lineGreen}></div>
+                        <div className={styles.lineBlue}></div>
 
                         <div className={styles.object}>
-                            <Image src={packs2green} className={styles.objectLogo} alt='logo fotos' quality={100}/>
+                            <Image src={packs2blue} className={styles.objectLogo} alt='logo fotos' quality={100}/>
                             10 fotos digitales e impresas en 15x20 cm a elegir
                         </div>
                     </div>
@@ -142,34 +144,36 @@ export default function Packs({ isMobile, packs }) {
                 </motion.div>
 
                 <motion.div className={`${styles.pack} ${styles.packDeluxe}`} animate={controlsPack3} onViewportEnter={() => !animatedPack3 && animatePack3(controlsPack3, setAnimatedPack3)}>
+                    <Image src={goldLines} className={styles.goldLines} alt='lineas doradas' quality={100}/>
+
                     <div className={styles.packTitle}>Pack Deluxe</div>
 
                     <div className={styles.packPrice}>420€</div>
 
                     <div className={styles.packObjects}>
                         <div className={styles.object}>
-                            <Image src={packs1green} className={styles.objectLogo} alt='logo sesiones' quality={100}/>
+                            <Image src={packs1black} className={styles.objectLogo} alt='logo sesiones' quality={100}/>
                             Sesión en estudio y exteriores
                         </div>
 
-                        <div className={styles.lineGreen}></div>
+                        <div className={styles.lineBlue}></div>
 
                         <div className={styles.object}>
-                            <Image src={packs2green} className={styles.objectLogo} alt='logo fotos' quality={100}/>
+                            <Image src={packs2black} className={styles.objectLogo} alt='logo fotos' quality={100}/>
                             60 fotos digitales a elegir en un pendrive
                         </div>
 
-                        <div className={styles.lineGreen}></div>
+                        <div className={styles.lineBlue}></div>
 
                         <div className={styles.object}>
-                            <Image src={packs3green} className={styles.objectLogo} alt='logo álbum' quality={100}/>
+                            <Image src={packs3black} className={styles.objectLogo} alt='logo álbum' quality={100}/>
                             Álbum 30x30 cm con 10 láminas entregado con caja de madera con foto
                         </div>
 
-                        <div className={styles.lineGreen}></div>
+                        <div className={styles.lineBlue}></div>
 
                         <div className={styles.object}>
-                            <Image src={packs4green} className={styles.objectLogo} alt='logo recordatorias' quality={100}/>
+                            <Image src={packs4black} className={styles.objectLogo} alt='logo recordatorias' quality={100}/>
                             10 recordatorias en 10x15 cm de regalo
                         </div>
                     </div>

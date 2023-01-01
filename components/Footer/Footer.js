@@ -60,7 +60,6 @@ export default function Footer({ header }) {
                         </div>
                     </div>
 
-                    <div className={styles.phone}>Info y Reservas: 691 041 289</div>
                 </div>
 
                 <div className={styles.right}>
@@ -74,9 +73,7 @@ export default function Footer({ header }) {
 
             <div className={styles.bottomFooter}>
                 <div className={styles.bottomLeftContainer}>
-                    <div>2022</div> 
-                    <div>&copy;</div> 
-                    <p>Comuniones Davean</p>
+                    <div className={styles.phone}>Info y Reservas: 691 041 289</div>
                 </div>
 
                 <div className={styles.bottomRightContainer}>
