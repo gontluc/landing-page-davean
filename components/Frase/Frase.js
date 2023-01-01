@@ -18,15 +18,13 @@ export default function Frase() {
     function animateLine() {
         setTimeout(() => {
             controls.start({
-                width: [
-                    '0%', '20%', '40%', '60%', '100%'
-                ],
+                width: '100%',
                 transition: {
-                    times: [0, 1, 2, 3, 5],
-                    duration: 5
+                    duration: 3,
+                    ease: 'easeInOut'
                 },
             })
-        }, 500)
+        }, 300)
 
         setAnimated(true)
     }
@@ -38,11 +36,15 @@ export default function Frase() {
                 <Image alt='abre comilla' src={abre} className={styles.abreComilla}/>
                 <Image alt='cierra comilla' src={cierra} className={styles.cierraComilla}/>
             </h2>
-            <motion.div 
-                className={styles.linea} 
-                animate={controls}
-                onViewportEnter={() => !animated && animateLine()}
-            />
+
+            <div className={styles.lineaContainer}>
+                <motion.div 
+                    className={styles.linea} 
+                    animate={controls}
+                    onViewportEnter={() => !animated && animateLine()}
+                />
+            </div>
+
             <h3 className={styles.davean}>Davean</h3>
         </div>
     )

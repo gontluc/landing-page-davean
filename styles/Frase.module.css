@@ -30,11 +30,19 @@
     transform: scale(.4);
 }
 
+.lineaContainer {
+    max-width: 210px;
+    height: 3px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .linea {
     background-color: rgba(0, 161, 151, 0.2);
-    height: 3px;
+    height: 100%;
     border-radius: 200px;
-    max-width: 210px;
     display: inline-block;
 }
 
@@ -64,7 +72,7 @@
         top: -50%;
     }
 
-    .linea {
+    .lineaContainer {
         max-width: 180px;
     }
 
@@ -95,7 +103,7 @@
         right: -65%;
     }
 
-    .linea {
+    .lineaContainer {
         max-width: 140px;
         height: 2px;
     }
@@ -127,9 +135,8 @@
         right: -70%;
     }
 
-    .linea {
+    .lineaContainer {
         max-width: 140px;
-        height: 2px;
     }
 
     .davean {
@@ -159,7 +166,7 @@
         right: -40%;
     }
 
-    .linea {
+    .lineaContainer {
         max-width: 100px;
     }
 
