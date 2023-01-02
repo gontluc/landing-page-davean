@@ -112,7 +112,11 @@ export default function Packs({ isMobile, packs }) {
                         </div>
                     </div>
 
-                    <div className={styles.packBtn}>RESERVAR SESIÓN</div>
+                    <div className={styles.packBtn}>
+                        <a href="https://wa.me/34691041289/?text=Hola!%20Estoy%20interesado/a%20en%20el%20Pack%20Básico%20del%20reportaje%20de%20primera%20Comunión" target="_blank">
+                            RESERVAR SESIÓN
+                        </a>
+                    </div>
                 </motion.div>
 
                 <motion.div className={`${styles.pack} ${styles.packPro}`} animate={controlsPack2} onViewportEnter={() => !animatedPack2 && animatePack2(controlsPack2, setAnimatedPack2)}>
@@ -140,7 +144,11 @@ export default function Packs({ isMobile, packs }) {
                         </div>
                     </div>
 
-                    <div className={styles.packBtn}>RESERVAR SESIÓN</div>
+                    <div className={styles.packBtn}>
+                        <a href="https://wa.me/34691041289/?text=Hola!%20Estoy%20interesado/a%20en%20el%20Pack%20Pro%20del%20reportaje%20de%20primera%20Comunión" target="_blank">
+                            RESERVAR SESIÓN
+                        </a>
+                    </div>
                 </motion.div>
 
                 <motion.div className={`${styles.pack} ${styles.packDeluxe}`} animate={controlsPack3} onViewportEnter={() => !animatedPack3 && animatePack3(controlsPack3, setAnimatedPack3)}>
@@ -178,7 +186,11 @@ export default function Packs({ isMobile, packs }) {
                         </div>
                     </div>
 
-                    <div className={styles.packBtn}>RESERVAR SESIÓN</div>
+                    <div className={styles.packBtn}>
+                        <a href="https://wa.me/34691041289/?text=Hola!%20Estoy%20interesado/a%20en%20el%20Pack%20Deluxe%20del%20reportaje%20de%20primera%20Comunión" target="_blank">
+                            RESERVAR SESIÓN
+                        </a>
+                    </div>
                 </motion.div>
             </div>
 

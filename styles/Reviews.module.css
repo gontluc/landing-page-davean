@@ -37,7 +37,7 @@
     align-items: center;
     gap: 20px;
     width: 520px;
-    font-size: 35px;
+    font-size: 30px;
     letter-spacing: 0.03em;
     color: var(--blue);
 }
@@ -69,7 +69,7 @@
     width: 100%;
     background-color: #FFF5EE;
     padding-bottom: 60px;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .follow {
@@ -101,8 +101,8 @@
 
 .igPicContainer {
     flex-grow: 1;
-    position: relative;
     cursor: pointer;
+    transition: all ease-in-out .8s;
 }
 
 .igPic {
@@ -111,25 +111,8 @@
     display: block;
 }
 
-.igPicContainer:hover::after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #fff5ee59;
-    animation: appears-hover .6s ease-in-out forwards;
-}
-
-@keyframes appears-hover {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+.igPicContainer:hover {
+    filter: grayscale(100%);
 }
 
 @media (max-width: 1600px) {
@@ -138,7 +121,7 @@
     }
 
     .followMe {
-        font-size: 28px;
+        font-size: 26px;
     }
 }
 
@@ -148,8 +131,12 @@
         width: 450px;
     }
 
+    .row2 {
+        margin-bottom: 40px;
+    }
+
     .followMe {
-        font-size: 26px;
+        font-size: 25px;
     }
 }
 
@@ -165,6 +152,10 @@
 }
 
 @media (max-width: 850px) {
+    .subContainer {
+        padding-top: 20px;
+    }
+
     .review {
         transform: scale(.8);
         width: 450px;
@@ -192,6 +183,10 @@
 }
 
 @media (max-width: 500px) {
+    .review {
+        width: 90%;
+    }
+
     .igPicContainer {
         min-width: auto;
         max-width: 50%;

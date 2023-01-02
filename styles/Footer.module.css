@@ -19,6 +19,17 @@
 .estudio {
     text-align: center;
     width: 20vw;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.estudio:hover {
+    background-color: rgba(204, 204, 204, 0.05);
+}
+
+.estudio:active {
+    transform: scale(.9);
 }
 
 .middle {
@@ -28,7 +39,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* gap: 60px; */
+    gap: 40px;
 }
 
 .redesContainer {
@@ -36,30 +47,55 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5px;
 }
 
-.red {
+.red a{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    padding-top: 1px;
 }
 
-.red div {
+.red a:hover {
+    background-color: rgba(204, 204, 204, 0.05);
+}
+
+.red a:active {
+    transform: scale(.9);
+}
+
+.red a div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .redIcon {
-    width: 34px;
+    max-width: 33px;
     height: auto;
     margin-top: 8px;
 }
 
-.phone {
+.webPrincipal {
     color: #FFCF26;
+    cursor: pointer;
+    letter-spacing: .05em;
+    font-size: 1.2em;
+    border-bottom: 2px solid transparent;
+    transition: all ease-in-out .8s;
+    padding: 2px;
+}
+
+.webPrincipal:hover {
+    border-color: #FFCF26;
+}
+
+.webPrincipal:active {
+    transform: scale(.85);
+    transition: all ease-in-out .1s;
 }
 
 .right {
@@ -102,13 +138,17 @@
     text-align: center;
 }
 
+.bottomLeftContainer a:active {
+    transform: scale(.9);
+}
+
 .bottomFooter p {
     font-family: var(--modernline-font);
     display: inline;
     font-size: .9em;
 }
 
-.bottomRightContainer {
+.bottomRightContainer a{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -117,6 +157,14 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.phone {
+    color: #FFCF26;
+}
+
+.phone:active {
+    transform: scale(.9);
 }
 
 .bottomRightContainer p {
@@ -138,9 +186,9 @@
         font-size: 22px;
     }
 
-    /* .middle {
+    .middle {
         gap: 40px;
-    } */
+    }
 
     .arrow {
         width: 60px;
@@ -185,9 +233,9 @@
         row-gap: 40px;
     }
 
-    /* .middle {
+    .middle {
         gap: 20px;
-    } */
+    }
 
     .redesContainer {
         gap: 0;

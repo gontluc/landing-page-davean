@@ -4,6 +4,12 @@ import RubberLetter from './RubberLetter/RubberLetter'
 
 import { useEffect, useState } from 'react'
 
+import decoradoLeft from '../../public/images/decoradoLeft.png'
+import decoradoRight from '../../public/images/decoradoRight.png'
+import logoLine from '../../public/images/logoLine.png'
+
+import Image from 'next/image'
+
 export default function HeroSection({ header }) {
 
     /* Change nav li color based on current img displaying */
@@ -80,17 +86,22 @@ export default function HeroSection({ header }) {
     }
 
     useEffect(() => {
-        for(let i = 0; i < 7; i++) {
-            setInterval(() => {
-                setTimeout(() => {
-                     changeHeroTitle(i)
-                }, 5000 * i)
-            }, 5000 * 7)
 
-            setTimeout(() => {
-                changeHeroTitle(i)
-            }, 5000 * i)
-        }
+        setTimeout(() => {
+
+            for(let i = 0; i < 7; i++) {
+                setInterval(() => {
+                    setTimeout(() => {
+                        changeHeroTitle(i)
+                    }, 5000 * i)
+                }, 5000 * 7)
+
+                setTimeout(() => {
+                    changeHeroTitle(i)
+                }, 5000 * i)
+            }
+        /* 4000 is var(--loading) */
+        }, 4000)
     }, [])
 
     /* 
@@ -152,6 +163,24 @@ export default function HeroSection({ header }) {
                     )
                 })}
             </div>
+            
+
+            {/* <div className={styles.decoradoContainer} style={{ opacity: showHeroTitle ? 0 : 1 }}>
+                <Image src={decorado} alt='decorado' quality={100} priority className={styles.decorado}/>
+            </div> */}
+
+            <div className={styles.decoradoContainer} style={{ opacity: showHeroTitle ? 0 : 1 }}>
+                <div className={styles.decoradoimgs}>
+                    <Image src={decoradoLeft} alt='decorado' quality={100} priority className={styles.decorado}/>
+
+                    <Image src={logoLine} alt='logo Davean Fotografía' quality={100} priority className={styles.logoLine}/>
+
+                    <Image src={decoradoRight} alt='decorado' quality={100} priority className={styles.decorado}/>
+                </div>
+                
+                <h1>Fotografía Sevilla</h1>
+            </div>
+
         </div>
         </>
     )

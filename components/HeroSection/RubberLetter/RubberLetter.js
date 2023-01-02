@@ -37,6 +37,15 @@ export default function RubberLetter({ letter, index, classLetter }) {
        }
     }
 
+    /* +4 is var(--loading) */
+    function loadingTime() {
+        if (classLetter === 'frase') {
+            return 4
+        } else {
+            return 0
+        }
+    }
+
     useEffect(() => {
         controls.start({
             opacity: [0, .4, .6, .7, .8, 1],
@@ -49,7 +58,7 @@ export default function RubberLetter({ letter, index, classLetter }) {
                 'scale3d(1, 1, 1)'
             ], */
             transition: {
-                delay: index * 0.2 + delayWord(),
+                delay: index * 0.2 + delayWord() + loadingTime(),
                 times: [0, .4, .6, .7, .8, .9]
             }
         })
@@ -77,7 +86,7 @@ export default function RubberLetter({ letter, index, classLetter }) {
         <motion.h1 
             className={getLetterClass()}
             animate={controls}
-            style={{ fontWeight: index > 10 ? 'bold' : '100' }}
+            /* style={{ fontWeight: index > 10 ? 'bold' : '100' }} */
             /* onMouseEnter={() => !isPlaying && rubberBand()} */
             /* onAnimationComplete={() => setIsPlaying(false)} */
         >

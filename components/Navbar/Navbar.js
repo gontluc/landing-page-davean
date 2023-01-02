@@ -3,6 +3,8 @@ import styles from '../../styles/Navbar.module.css'
 import Image from 'next/image'
 
 import logo from '../../public/images/logo.png'
+import ig from '../../public/images/igIcon.png'
+import fb from '../../public/images/fbIcon.png'
 
 import { useEffect, useState, useCallback } from 'react'
 
@@ -46,7 +48,7 @@ export default function Navbar({ catalogo, packs, preguntas }) {
                 node.innerHTML = ''
             }
 
-            if (node.innerHTML !== 'Catálogo') {
+            if (node.innerHTML !== 'Fotos') {
                 const newNode = document.createElement('div')
                 newNode.classList.add('absolute')
                 newNode.append(appendCatalogo[0], appendCatalogo[1], appendCatalogo[2])
@@ -91,7 +93,7 @@ export default function Navbar({ catalogo, packs, preguntas }) {
                 node.innerHTML = ''
             }
 
-            if (node.innerHTML !== 'Catálogo') {
+            if (node.innerHTML !== 'Fotos') {
                 const newNode = document.createElement('div')
                 newNode.classList.add('absolute')
                 newNode.append(appendCatalogoResponsive[0], appendCatalogoResponsive[1], appendCatalogoResponsive[2])
@@ -197,7 +199,9 @@ export default function Navbar({ catalogo, packs, preguntas }) {
                 : 'var(--green-transparent)' 
         }}>
             <div className={styles.imgContainer}>
-                <Image src={logo} alt="Logo Davean fotografía" priority className={styles.logo}/>
+                <a href="/">
+                    <Image src={logo} alt="Logo Davean fotografía" priority className={styles.logo}/>
+                </a>
             </div>
 
             <ul className={styles.navigation} /* style={{ color: onTop ? 'var(--nav-color)' : '#fff' }} */>
@@ -207,7 +211,7 @@ export default function Navbar({ catalogo, packs, preguntas }) {
                     onMouseLeave={() => setLeaveCatalogo(true)}
                     ref={liCatalogo}
                     className={styles.catalogo}
-                >Catálogo</li>
+                >Fotos</li>
                 <li 
                     onClick={() => packs.current.scrollIntoView()} 
                     onMouseEnter={(e) => !animatingPacks && leavePacks && animateNavbar(e, setAppendPacks, setAnimatingPacks, setLeavePacks, packs.current)}
@@ -226,11 +230,22 @@ export default function Navbar({ catalogo, packs, preguntas }) {
 
             <Menu className={styles.hamMenu} onClick={() => setToggleMenu(!toggleMenu)}/>
 
-            <div className={styles.navResponsive} style={{ opacity: toggleMenu ? 1 : 0, visibility: toggleMenu ? 'visible' : 'hidden' }}>
+            <div 
+                className={styles.navResponsive} 
+                style={{ /* opacity: toggleMenu ? 1 : 0, */ visibility: toggleMenu ? 'visible' : 'hidden', transform: toggleMenu ? 'translateX(0%)' : 'translateX(-100%)' }}
+            >
 
-                <div className={styles.closeContainer} onClick={() => setToggleMenu(false)}>
-                    <Close className={styles.close}/>
+                <div className={styles.topContainer}>
+
+                    <Menu className={styles.menuTop} onClick={() => setToggleMenu(!toggleMenu)}/>
+
+                    <div className={styles.closeContainer} onClick={() => setToggleMenu(false)}>
+                        <Close className={styles.close}/>
+                    </div>
                 </div>
+
+
+                
 
                 <ul className={styles.navigationResponsive}>
                     <li 
@@ -242,7 +257,7 @@ export default function Navbar({ catalogo, packs, preguntas }) {
                         onMouseLeave={() => setLeaveCatalogo(true)}
                         ref={liCatalogoResponsive}
                         className={styles.catalogo}
-                    >Catálogo</li>
+                    >Fotos</li>
                     <li 
                         onClick={() => {
                             packs.current.scrollIntoView()
@@ -266,11 +281,21 @@ export default function Navbar({ catalogo, packs, preguntas }) {
                 </ul>
 
                 <div className={styles.logoContainerResponsive}>
-                    <Image src={logo} alt="Logo Davean fotografía" priority className={styles.logoResponsive}/>
+                    <a href="/">
+                        <Image src={logo} alt="Logo Davean fotografía" priority className={styles.logoResponsive}/>
+                    </a>
+                    <div className={styles.socials}>
+                        <a href="https://www.instagram.com/comuniones_davean/" target="_blank">
+                            <Image src={ig} alt="instagram Davean fotografía" priority className={styles.social}/>
+                        </a>
+                        <a href="https://es-es.facebook.com/daveanphotography/" target="_blank">
+                            <Image src={fb} alt="facebook Davean fotografía" priority className={styles.social}/>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div className={styles.btn}>RESERVA HOY</div>
+            <div className={styles.btn} onClick={() => packs.current.scrollIntoView()}>RESERVAR</div>
         </nav>
     )
 }

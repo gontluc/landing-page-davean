@@ -109,7 +109,7 @@ export default function Section6({ isMobile }) {
                 </div>
             </div>
 
-            <div className={styles.btn}><a href="">VER MÁS FOTOS</a></div>
+            <div className={styles.btn}><a href="https://www.instagram.com/comuniones_davean/" target="_blank">VER MÁS FOTOS</a></div>
             
         </section>
     )

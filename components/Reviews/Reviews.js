@@ -21,57 +21,75 @@ export default function Reviews({ isMobile }) {
                 <div className={styles.row1}>
                     <div className={styles.review}>
                         <Image className={styles.comillas} src={comillas} alt='comillas' quality={100}/>
-                        <p className={styles.reviewText}>Hizo el reportaje de la comuion de mi hija y quedamos muy contentos.</p>
+                        <p className={styles.reviewText}>
+                            Encantada con la sesión de fotos de la primera comunión de mi hijo, gran calidad y muy originales. Estoy super contenta de haberlo elegido, es un profesional de 10!
+                        </p>
                         <Image className={styles.stars} src={stars} alt='5 estrellas' quality={100}/>
-                        <p className={styles.author}>Manuel Andujar</p>
+                        <p className={styles.author}>Laura Nuñez</p>
                     </div>
 
                     <div className={styles.review}>
                         <Image className={styles.comillas} src={comillas} alt='comillas' quality={100}/>
-                        <p className={styles.reviewText}>Gran profesional! Las fotos que me hizo me encantaron!! Sin duda volveré a repetir</p>
+                        <p className={styles.reviewText}>
+                            Reportaje de comunión excelente, las fotos y el album precioso, muy buen gusto en todo, hasta el usb de las fotos esta bonito, lo recomiendo totalmente
+                        </p>
                         <Image className={styles.stars} src={stars} alt='5 estrellas' quality={100}/>
-                        <p className={styles.author}>Elisabet Jurado</p>
+                        <p className={styles.author}>Patry Fernandez</p>
                     </div>
                 </div>
 
                 <div className={styles.row2}>
                 <div className={styles.review}>
                         <Image className={styles.comillas} src={comillas} alt='comillas' quality={100}/>
-                        <p className={styles.reviewText}>Cercanía y profesionalidad 100%!</p>
+                        <p className={styles.reviewText}>
+                            Muy buen profesional, atento, rápido y con muchísima calidad en su trabajo
+                        </p>
                         <Image className={styles.stars} src={stars} alt='5 estrellas' quality={100}/>
-                        <p className={styles.author}>Mónica Cruz</p>
+                        <p className={styles.author}>Ana Maria</p>
                     </div>
                 </div>
             </div>
 
             <div className={styles.followMe}>
                 <h4 className={styles.follow}>Sígueme en Instagram</h4>
-                <div className={styles.profile}>@comuniones_davean</div>
+                <div className={styles.profile}><a href="https://www.instagram.com/comuniones_davean/" target="_blank">@comuniones_davean</a></div>
             </div>
 
             <div className={styles.instagramPics}>
                 <div className={styles.igPicContainer}>
-                    <Image className={styles.igPic} src={ig1} alt='niña fotografía comunión Sevilla Davean' quality={100}/>
+                    <a href="https://www.instagram.com/p/CgH2lQdsXfW/" target="_blank">
+                        <Image className={styles.igPic} src={ig1} alt='niña fotografía comunión Sevilla Davean' quality={100}/>
+                    </a>
                 </div>
 
                 <div className={styles.igPicContainer}>
-                    <Image className={styles.igPic} src={ig2} alt='hermanos fotografía comunión Sevilla Davean' quality={100}/>
+                    <a href="https://www.instagram.com/p/CfesWxvMSGz/" target="_blank">
+                        <Image className={styles.igPic} src={ig2} alt='hermanos fotografía comunión Sevilla Davean' quality={100}/>
+                    </a>
                 </div>
 
                 <div className={styles.igPicContainer}>
-                    <Image className={styles.igPic} src={ig3} alt='niño fotografía comunión Sevilla Davean' quality={100}/>
+                    <a href="https://www.instagram.com/p/Cc2nrUDoAWo/" target="_blank">
+                        <Image className={styles.igPic} src={ig3} alt='niño fotografía comunión Sevilla Davean' quality={100}/>
+                    </a>
                 </div>
 
                 <div className={styles.igPicContainer}>
-                    <Image className={styles.igPic} src={ig4} alt='niño fotografía comunión Sevilla Davean' quality={100}/>
+                    <a href="https://www.instagram.com/p/CdGazN0LSc4/" target="_blank">
+                        <Image className={styles.igPic} src={ig4} alt='niño fotografía comunión Sevilla Davean' quality={100}/>
+                    </a>
                 </div>
 
                 <div className={styles.igPicContainer}>
-                    <Image className={styles.igPic} src={ig5} alt='niño fotografía comunión Sevilla Davean' quality={100}/>
+                    <a href="https://www.instagram.com/p/ChFYB3wLLX4/" target="_blank">
+                        <Image className={styles.igPic} src={ig5} alt='niño fotografía comunión Sevilla Davean' quality={100}/>
+                    </a>
                 </div>
 
                 <div className={styles.igPicContainer}>
-                    <Image className={styles.igPic} src={ig6} alt='niña fotografía comunión Sevilla Davean' quality={100}/>
+                    <a href="https://www.instagram.com/p/ChXvoNZrhQT/" target="_blank">
+                        <Image className={styles.igPic} src={ig6} alt='niña fotografía comunión Sevilla Davean' quality={100}/>
+                    </a>
                 </div>
             </div>
         </div>

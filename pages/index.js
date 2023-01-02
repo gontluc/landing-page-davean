@@ -32,7 +32,7 @@ export default function Home() {
 
     setTimeout(() => {
       setIsLoading(false)
-    }, 2000)
+    }, 4000)
   }, [])
 
   return (
@@ -89,29 +89,27 @@ export default function Home() {
         />
       </Head>
 
-      {isLoading ? <Loading /> : <>
-          <Navbar catalogo={catalogo} packs={packs} preguntas={preguntas}/>
+      {isLoading && <Loading />}
 
-          <main>
-            <HeroSection header={header}/>
+      <Navbar catalogo={catalogo} packs={packs} preguntas={preguntas}/>
 
-            <Frase />
+      <main>
+        <HeroSection header={header}/>
 
-            <Catalogo isMobile={isMobile} catalogo={catalogo}/>
+        <Frase />
 
-            <Plazas isMobile={isMobile}/>
+        <Catalogo isMobile={isMobile} catalogo={catalogo}/>
 
-            <Packs isMobile={isMobile} packs={packs}/>
+        <Plazas isMobile={isMobile}/>
 
-            <Preguntas isMobile={isMobile} preguntas={preguntas}/>
+        <Packs isMobile={isMobile} packs={packs}/>
 
-            <Reviews isMobile={isMobile}/>
-          </main>
+        <Preguntas isMobile={isMobile} preguntas={preguntas}/>
 
-          <Footer header={header}/>
-        </>
-      }
-      
+        <Reviews isMobile={isMobile}/>
+      </main>
+
+      <Footer header={header}/>
     </>
   )
 }
