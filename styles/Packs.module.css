@@ -219,6 +219,10 @@
         height: 670px;
     }
 
+    .packDeluxe {
+        height: 700px;
+    }
+
     .infoContainer {
         transform: translateY(-0px);
         margin-top: 30px;
