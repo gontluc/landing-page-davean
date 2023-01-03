@@ -5,9 +5,9 @@
 }
 
 .imgContainer {
-    transform: translateY(400px);
+    /* transform: translateY(400px);
     filter: blur(8px);
-    opacity: 0;
+    opacity: 0; */
 }
 
 .catalogo2 {

@@ -155,8 +155,8 @@ export default function Catalogo({ isMobile, catalogo }) {
             <section className={styles1.section1}>
 
                 <motion.div 
-                    animate={controlsImg1}
-                    onViewportEnter={() => !animatedImg1 && animateImg(controlsImg1, setAnimatedImg1)}
+                    /* animate={controlsImg1}
+                    onViewportEnter={() => !animatedImg1 && animateImg(controlsImg1, setAnimatedImg1)} */
                     className={styles1.imgContainer}
                 >
                     <Image 
@@ -185,8 +185,8 @@ export default function Catalogo({ isMobile, catalogo }) {
                 </div>
 
                 <motion.div 
-                    animate={controlsImg2}
-                    onViewportEnter={() => !animatedImg2 && animateImg(controlsImg2, setAnimatedImg2)}
+                    /* animate={controlsImg2}
+                    onViewportEnter={() => !animatedImg2 && animateImg(controlsImg2, setAnimatedImg2)} */
                     className={styles2.imgContainer}
                 >
                     <Image 
@@ -240,8 +240,8 @@ export default function Catalogo({ isMobile, catalogo }) {
             <section className={styles3.section3}>
 
                 <motion.div 
-                    animate={controlsImg3}
-                    onViewportEnter={() => !animatedImg3 && animateImg2(controlsImg3, setAnimatedImg3)}
+                    /* animate={controlsImg3}
+                    onViewportEnter={() => !animatedImg3 && animateImg2(controlsImg3, setAnimatedImg3)} */
                     className={styles3.imgContainer}
                 >
                     <Image 

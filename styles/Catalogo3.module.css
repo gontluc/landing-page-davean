@@ -5,8 +5,8 @@
 }
 
 .imgContainer {
-    transform: translateY(400px);
-    filter: blur(8px);
+    /* transform: translateY(400px);
+    filter: blur(8px); */
     display: flex;
     justify-content: center;
 }

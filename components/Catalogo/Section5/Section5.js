@@ -28,8 +28,8 @@ export default function Section5({ isMobile, animateImg, animateImg4 }) {
 
             <div className={styles.imgs}>
                 <motion.div 
-                    animate={controlsImg1}
-                    onViewportEnter={() => !animatedImg1 && animateImg(controlsImg1, setAnimatedImg1)}
+                    /* animate={controlsImg1}
+                    onViewportEnter={() => !animatedImg1 && animateImg(controlsImg1, setAnimatedImg1)} */
                     className={styles.imgContainer1}
                 >
                     <Image 
@@ -41,8 +41,8 @@ export default function Section5({ isMobile, animateImg, animateImg4 }) {
                 </motion.div>
 
                 <motion.div 
-                    animate={controlsImg2}
-                    onViewportEnter={() => !animatedImg2 && animateImg4(controlsImg2, setAnimatedImg2)}
+                    /* animate={controlsImg2}
+                    onViewportEnter={() => !animatedImg2 && animateImg4(controlsImg2, setAnimatedImg2)} */
                     className={styles.imgContainer2}
                 >
                     <Image 

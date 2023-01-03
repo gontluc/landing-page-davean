@@ -28,8 +28,8 @@ export default function Section4({ isMobile, animateImg3, animateImg4 }) {
         <section className={styles.section}>
 
             <motion.div 
-                animate={controlsImg2}
-                onViewportEnter={() => !animatedImg2 && animateImg3(controlsImg2, setAnimatedImg2)}
+                /* animate={controlsImg2}
+                onViewportEnter={() => !animatedImg2 && animateImg3(controlsImg2, setAnimatedImg2)} */
                 className={styles.imgContainer}
             >
                 <Image 
@@ -55,8 +55,8 @@ export default function Section4({ isMobile, animateImg3, animateImg4 }) {
             </div>
 
             <motion.div 
-                animate={controlsImg1}
-                onViewportEnter={() => !animatedImg1 && animateImg4(controlsImg1, setAnimatedImg1)}
+                /* animate={controlsImg1}
+                onViewportEnter={() => !animatedImg1 && animateImg4(controlsImg1, setAnimatedImg1)} */
                 className={styles.imgContainer}
             >
                 <Image 
@@ -94,8 +94,8 @@ export default function Section4({ isMobile, animateImg3, animateImg4 }) {
 
                 <div className={stylesr.imgs}>
                     <motion.div 
-                        animate={controlsImg2}
-                        onViewportEnter={() => !animatedImg2 && animateImg3(controlsImg2, setAnimatedImg2)}
+                        /* animate={controlsImg2}
+                        onViewportEnter={() => !animatedImg2 && animateImg3(controlsImg2, setAnimatedImg2)} */
                         className={stylesr.imgContainer}
                     >
                         <Image 
@@ -107,8 +107,8 @@ export default function Section4({ isMobile, animateImg3, animateImg4 }) {
                     </motion.div>
 
                     <motion.div 
-                        animate={controlsImg1}
-                        onViewportEnter={() => !animatedImg1 && animateImg4(controlsImg1, setAnimatedImg1)}
+                        /* animate={controlsImg1}
+                        onViewportEnter={() => !animatedImg1 && animateImg4(controlsImg1, setAnimatedImg1)} */
                         className={stylesr.imgContainer}
                     >
                         <Image 

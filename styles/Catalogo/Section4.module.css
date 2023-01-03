@@ -7,9 +7,9 @@
 }
 
 .imgContainer {
-    transform: translateY(400px);
+    /* transform: translateY(400px); */
     z-index: 0;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 .img1 {
