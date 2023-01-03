@@ -8,6 +8,8 @@ import fb from '../../public/images/fbIcon.png'
 
 import { useRef, useEffect } from 'react'
 
+import Link from 'next/link'
+
 export default function Footer({ header }) {
 
     const arrowUp = useRef(null)
@@ -43,33 +45,41 @@ export default function Footer({ header }) {
         <footer className={styles.container}>
             <div className={styles.topFooter}>
                 <div className={styles.estudio}>
-                    <a href="https://www.google.com/maps/place/Davean+Fotograf%C3%ADa/@37.3865212,-6.0079765,15z/data=!4m5!3m4!1s0x0:0xa681617cebdedf2e!8m2!3d37.3865212!4d-6.0079765" target="_blank">
-                        <p>Estudio:</p>
-                        <p>C/ Clara de Jesús Montero, 32</p>
-                        <p>Barrio Triana - Sevilla</p>
-                    </a>
+                    <Link href="https://www.google.com/maps/place/Davean+Fotograf%C3%ADa/@37.3865212,-6.0079765,15z/data=!4m5!3m4!1s0x0:0xa681617cebdedf2e!8m2!3d37.3865212!4d-6.0079765" legacyBehavior>
+                        <a target="_blank">
+                            <p>Estudio:</p>
+                            <p>C/ Clara de Jesús Montero, 32</p>
+                            <p>Barrio Triana - Sevilla</p>
+                        </a>
+                    </Link>
                 </div>
 
                 <div className={styles.middle}>
                     <div className={styles.redesContainer}>
                         <div className={styles.red}>
-                            <a href="https://www.instagram.com/comuniones_davean/" target="_blank">
-                                <Image className={styles.redIcon} src={ig} alt='instagram' quality={100}/>
-                                <div>@comuniones_davean</div>
-                            </a>
+                            <Link href="https://www.instagram.com/comuniones_davean/" legacyBehavior>
+                                <a target="_blank">
+                                    <Image className={styles.redIcon} src={ig} alt='instagram' quality={100}/>
+                                    <div>@comuniones_davean</div>
+                                </a>
+                            </Link>
                         </div>
                         <div className={styles.red}>
-                            <a href="https://es-es.facebook.com/daveanphotography/" target="_blank">
-                                <Image className={styles.redIcon} src={fb} alt='facebook' quality={100}/>
-                                <div>@daveanphotography</div>
-                            </a>
+                            <Link href="https://es-es.facebook.com/daveanphotography/" legacyBehavior>
+                                <a target="_blank">
+                                    <Image className={styles.redIcon} src={fb} alt='facebook' quality={100}/>
+                                    <div>@daveanphotography</div>
+                                </a>
+                            </Link>
                         </div>
                     </div>
 
                     <div className={styles.webPrincipal}>
-                        <a href="http://davean.es/" target="_blank">
-                            www.davean.es
-                        </a>
+                        <Link href="http://davean.es/" legacyBehavior>
+                            <a target="_blank">
+                                www.davean.es
+                            </a>
+                        </Link>
                     </div>
                 </div>
 
@@ -85,17 +95,21 @@ export default function Footer({ header }) {
             <div className={styles.bottomFooter}>
                 <div className={styles.bottomLeftContainer}>
                     <div className={styles.phone}>
-                        <a href="tel:+34691041289">
-                            Info y Reservas: 691 041 289
-                        </a>
+                        <Link href="tel:+34691041289" legacyBehavior>
+                            <a>
+                                Info y Reservas: 691 041 289
+                            </a>
+                        </Link>
                     </div>
                 </div>
 
                 <div className={styles.bottomRightContainer}>
-                    <a href="https://lucasgontijo.com/" target="_blank">
-                        <div>by</div>
-                        <p>Lucas Gontijo</p>
-                    </a>
+                    <Link href="https://lucasgontijo.com/" legacyBehavior>
+                        <a target="_blank">
+                            <div>by</div>
+                            <p>Lucas Gontijo</p>
+                        </a>
+                    </Link>
                 </div>
             </div>
         </footer>

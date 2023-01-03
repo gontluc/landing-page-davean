@@ -1,6 +1,7 @@
 import styles from '../../styles/Packs.module.css'
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 import packs1black from '../../public/images/packs1black.png'
 import packs2black from '../../public/images/packs2black.png'
@@ -113,9 +114,11 @@ export default function Packs({ isMobile, packs }) {
                     </div>
 
                     <div className={styles.packBtn}>
-                        <a href="https://wa.me/34691041289/?text=Hola!%20Estoy%20interesado/a%20en%20el%20Pack%20Básico%20del%20reportaje%20de%20primera%20Comunión" target="_blank">
-                            RESERVAR SESIÓN
-                        </a>
+                        <Link href="https://wa.me/34691041289/?text=Hola!%20Estoy%20interesado/a%20en%20el%20Pack%20Básico%20del%20reportaje%20de%20primera%20Comunión" legacyBehavior>
+                            <a target="_blank">
+                                RESERVAR SESIÓN
+                            </a>
+                        </Link>
                     </div>
                 </motion.div>
 
@@ -145,9 +148,11 @@ export default function Packs({ isMobile, packs }) {
                     </div>
 
                     <div className={styles.packBtn}>
-                        <a href="https://wa.me/34691041289/?text=Hola!%20Estoy%20interesado/a%20en%20el%20Pack%20Pro%20del%20reportaje%20de%20primera%20Comunión" target="_blank">
-                            RESERVAR SESIÓN
-                        </a>
+                        <Link href="https://wa.me/34691041289/?text=Hola!%20Estoy%20interesado/a%20en%20el%20Pack%20Pro%20del%20reportaje%20de%20primera%20Comunión" legacyBehavior>
+                            <a target="_blank">
+                                RESERVAR SESIÓN
+                            </a>
+                        </Link>
                     </div>
                 </motion.div>
 
@@ -187,9 +192,11 @@ export default function Packs({ isMobile, packs }) {
                     </div>
 
                     <div className={styles.packBtn}>
-                        <a href="https://wa.me/34691041289/?text=Hola!%20Estoy%20interesado/a%20en%20el%20Pack%20Deluxe%20del%20reportaje%20de%20primera%20Comunión" target="_blank">
-                            RESERVAR SESIÓN
-                        </a>
+                        <Link href="https://wa.me/34691041289/?text=Hola!%20Estoy%20interesado/a%20en%20el%20Pack%20Deluxe%20del%20reportaje%20de%20primera%20Comunión" legacyBehavior>
+                            <a target="_blank">
+                                RESERVAR SESIÓN
+                            </a>
+                        </Link>
                     </div>
                 </motion.div>
             </div>

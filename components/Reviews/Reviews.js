@@ -1,6 +1,7 @@
 import styles from '../../styles/Reviews.module.css'
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 import waves from '../../public/images/waveReviews.png'
 import comillas from '../../public/images/comillasReviews.png'
@@ -52,44 +53,56 @@ export default function Reviews({ isMobile }) {
 
             <div className={styles.followMe}>
                 <h4 className={styles.follow}>Sígueme en Instagram</h4>
-                <div className={styles.profile}><a href="https://www.instagram.com/comuniones_davean/" target="_blank">@comuniones_davean</a></div>
+                <div className={styles.profile}><Link href="https://www.instagram.com/comuniones_davean/" legacyBehavior><a target="_blank">@comuniones_davean</a></Link></div>
             </div>
 
             <div className={styles.instagramPics}>
                 <div className={styles.igPicContainer}>
-                    <a href="https://www.instagram.com/p/CgH2lQdsXfW/" target="_blank">
-                        <Image className={styles.igPic} src={ig1} alt='niña fotografía comunión Sevilla Davean' quality={100}/>
-                    </a>
+                    <Link href="https://www.instagram.com/p/CgH2lQdsXfW/" legacyBehavior>
+                        <a target="_blank">
+                            <Image className={styles.igPic} src={ig1} alt='niña fotografía comunión Sevilla Davean' quality={100}/>
+                        </a>
+                    </Link>
                 </div>
 
                 <div className={styles.igPicContainer}>
-                    <a href="https://www.instagram.com/p/CfesWxvMSGz/" target="_blank">
-                        <Image className={styles.igPic} src={ig2} alt='hermanos fotografía comunión Sevilla Davean' quality={100}/>
-                    </a>
+                    <Link href="https://www.instagram.com/p/CfesWxvMSGz/" legacyBehavior>
+                        <a target="_blank">
+                            <Image className={styles.igPic} src={ig2} alt='hermanos fotografía comunión Sevilla Davean' quality={100}/>
+                        </a>
+                    </Link>
                 </div>
 
                 <div className={styles.igPicContainer}>
-                    <a href="https://www.instagram.com/p/Cc2nrUDoAWo/" target="_blank">
-                        <Image className={styles.igPic} src={ig3} alt='niño fotografía comunión Sevilla Davean' quality={100}/>
-                    </a>
+                    <Link href="https://www.instagram.com/p/Cc2nrUDoAWo/" legacyBehavior>
+                        <a target="_blank">
+                            <Image className={styles.igPic} src={ig3} alt='niño fotografía comunión Sevilla Davean' quality={100}/>
+                        </a>
+                    </Link>
                 </div>
 
                 <div className={styles.igPicContainer}>
-                    <a href="https://www.instagram.com/p/CdGazN0LSc4/" target="_blank">
-                        <Image className={styles.igPic} src={ig4} alt='niño fotografía comunión Sevilla Davean' quality={100}/>
-                    </a>
+                    <Link href="https://www.instagram.com/p/CdGazN0LSc4/" legacyBehavior>
+                        <a target="_blank">
+                            <Image className={styles.igPic} src={ig4} alt='niño fotografía comunión Sevilla Davean' quality={100}/>
+                        </a>
+                    </Link>
                 </div>
 
                 <div className={styles.igPicContainer}>
-                    <a href="https://www.instagram.com/p/ChFYB3wLLX4/" target="_blank">
-                        <Image className={styles.igPic} src={ig5} alt='niño fotografía comunión Sevilla Davean' quality={100}/>
-                    </a>
+                    <Link href="https://www.instagram.com/p/ChFYB3wLLX4/" legacyBehavior>
+                        <a target="_blank">
+                            <Image className={styles.igPic} src={ig5} alt='niño fotografía comunión Sevilla Davean' quality={100}/>
+                        </a>
+                    </Link>
                 </div>
 
                 <div className={styles.igPicContainer}>
-                    <a href="https://www.instagram.com/p/ChXvoNZrhQT/" target="_blank">
-                        <Image className={styles.igPic} src={ig6} alt='niña fotografía comunión Sevilla Davean' quality={100}/>
-                    </a>
+                    <Link href="https://www.instagram.com/p/ChXvoNZrhQT/" legacyBehavior>
+                        <a target="_blank">
+                            <Image className={styles.igPic} src={ig6} alt='niña fotografía comunión Sevilla Davean' quality={100}/>
+                        </a>
+                    </Link>
                 </div>
             </div>
         </div>

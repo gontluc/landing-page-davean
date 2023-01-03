@@ -1,6 +1,7 @@
 import styles from '../../styles/Navbar.module.css'
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 import logo from '../../public/images/logo.png'
 import ig from '../../public/images/igIcon.png'
@@ -199,9 +200,11 @@ export default function Navbar({ catalogo, packs, preguntas }) {
                 : 'var(--green-transparent)' 
         }}>
             <div className={styles.imgContainer}>
-                <a href="/">
-                    <Image src={logo} alt="Logo Davean fotografía" priority className={styles.logo}/>
-                </a>
+                <Link href="/" legacyBehavior>
+                    <a>
+                        <Image src={logo} alt="Logo Davean fotografía" priority className={styles.logo}/>
+                    </a>
+                </Link>
             </div>
 
             <ul className={styles.navigation} /* style={{ color: onTop ? 'var(--nav-color)' : '#fff' }} */>
@@ -281,16 +284,22 @@ export default function Navbar({ catalogo, packs, preguntas }) {
                 </ul>
 
                 <div className={styles.logoContainerResponsive}>
-                    <a href="/">
-                        <Image src={logo} alt="Logo Davean fotografía" priority className={styles.logoResponsive}/>
-                    </a>
+                    <Link href="/" legacyBehavior>
+                        <a>
+                            <Image src={logo} alt="Logo Davean fotografía" priority className={styles.logoResponsive}/>
+                        </a>
+                    </Link>
                     <div className={styles.socials}>
-                        <a href="https://www.instagram.com/comuniones_davean/" target="_blank">
-                            <Image src={ig} alt="instagram Davean fotografía" priority className={styles.social}/>
-                        </a>
-                        <a href="https://es-es.facebook.com/daveanphotography/" target="_blank">
-                            <Image src={fb} alt="facebook Davean fotografía" priority className={styles.social}/>
-                        </a>
+                        <Link href="https://www.instagram.com/comuniones_davean/" legacyBehavior>
+                            <a target="_blank">
+                                <Image src={ig} alt="instagram Davean fotografía" priority className={styles.social}/>
+                            </a>
+                        </Link>
+                        <Link href="https://es-es.facebook.com/daveanphotography/" legacyBehavior>
+                            <a target="_blank">
+                                <Image src={fb} alt="facebook Davean fotografía" priority className={styles.social}/>
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </div>

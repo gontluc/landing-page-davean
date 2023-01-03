@@ -16,6 +16,8 @@ import wheat from '../../../public/images/wheat.png'
 
 import Image from 'next/image'
 
+import Link from 'next/link'
+
 export default function Section6({ isMobile }) {
 
     return (
@@ -109,7 +111,7 @@ export default function Section6({ isMobile }) {
                 </div>
             </div>
 
-            <div className={styles.btn}><a href="https://www.instagram.com/comuniones_davean/" target="_blank">VER MÁS FOTOS</a></div>
+            <div className={styles.btn}><Link href="https://www.instagram.com/comuniones_davean/" legacyBehavior><a target="_blank">VER MÁS FOTOS</a></Link></div>
             
         </section>
     )
