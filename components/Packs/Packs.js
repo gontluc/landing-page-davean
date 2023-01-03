@@ -12,6 +12,11 @@ import packs1blue from '../../public/images/packs1blue.png'
 import packs2blue from '../../public/images/packs2blue.png'
 import packs3blue from '../../public/images/packs3blue.png'
 
+import price1 from '../../public/images/price1.png'
+import price2 from '../../public/images/price2.png'
+import price3 from '../../public/images/price3.png'
+
+
 import goldLines from '../../public/images/goldLines.png'
 
 import arrow from '../../public/images/arrowPacks.png'
@@ -97,7 +102,9 @@ export default function Packs({ isMobile, packs }) {
                 <motion.div className={`${styles.pack} ${styles.packBasico}`} animate={controlsPack1} onViewportEnter={() => !animatedPack1 && animatePack1(controlsPack1, setAnimatedPack1)}>
                     <div className={styles.packTitle}>Pack Básico</div>
 
-                    <div className={styles.packPrice}>120€</div>
+                    {/* <div className={styles.packPrice}>120€</div> */}
+
+                    <Image src={price1} className={styles.packPrice} alt='120€' quality={100}/>
 
                     <div className={styles.packObjects}>
                         <div className={styles.object}>
@@ -125,7 +132,9 @@ export default function Packs({ isMobile, packs }) {
                 <motion.div className={`${styles.pack} ${styles.packPro}`} animate={controlsPack2} onViewportEnter={() => !animatedPack2 && animatePack2(controlsPack2, setAnimatedPack2)}>
                     <div className={styles.packTitle}>Pack Pro</div>
 
-                    <div className={styles.packPrice}>290€</div>
+                    {/* <div className={styles.packPrice}>290€</div> */}
+
+                    <Image src={price2} className={styles.packPrice} alt='290€' quality={100}/>
 
                     <div className={styles.packObjects}>
                         <div className={styles.object}>
@@ -161,7 +170,9 @@ export default function Packs({ isMobile, packs }) {
 
                     <div className={styles.packTitle}>Pack Deluxe</div>
 
-                    <div className={styles.packPrice}>420€</div>
+                    {/* <div className={styles.packPrice}>420€</div> */}
+
+                    <Image src={price3} className={styles.packPrice} alt='420€' quality={100}/>
 
                     <div className={styles.packObjects}>
                         <div className={styles.object}>
