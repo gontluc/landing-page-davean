@@ -94,7 +94,7 @@ export default function Home() {
       <Navbar catalogo={catalogo} packs={packs} preguntas={preguntas}/>
 
       <main>
-        <HeroSection header={header}/>
+        <HeroSection isMobile={isMobile} header={header}/>
 
         <Frase />
 

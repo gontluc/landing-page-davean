@@ -10,7 +10,7 @@ import logoLine from '../../public/images/logoLine.png'
 
 import Image from 'next/image'
 
-export default function HeroSection({ header }) {
+export default function HeroSection({ isMobile, header }) {
 
     /* Change nav li color based on current img displaying */
 
@@ -87,8 +87,8 @@ export default function HeroSection({ header }) {
 
     useEffect(() => {
 
+        /* Change heroTitle */
         setTimeout(() => {
-
             for(let i = 0; i < 7; i++) {
                 setInterval(() => {
                     setTimeout(() => {
@@ -102,6 +102,11 @@ export default function HeroSection({ header }) {
             }
         /* 4000 is var(--loading) */
         }, 4000)
+
+        /* Changes imgs hero section if mobile */
+        if (!isMobile) {
+            document.querySelector('html').style.setProperty('--herosection-img1-dt', `linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg2.jpg')`)
+        }
     }, [])
 
     /* 

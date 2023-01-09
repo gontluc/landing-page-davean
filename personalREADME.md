@@ -9,3 +9,11 @@
 # dependencies
  
 npm i framer-motion
+
+# Migration from Vercel to Cloudflare
+
+https://developers.cloudflare.com/pages/framework-guides/deploy-a-nextjs-site/
+
+- Delete API route `hello.js` (incompatible with Cloudflare)
+
+- Configure `next.config.js`
