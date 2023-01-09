@@ -122,8 +122,8 @@ export default function Preguntas({ isMobile, preguntas }) {
                         }}
                     >
                         <p>Lo ideal es hacerla 4-5 semanas antes del día de la Comunión, para que no haya problemas en los plazos de entrega de las impresiones. Se podrían hacer con menos tiempo aunque estaremos más justos para imprimir y puede que productos como el álbum no lleguen a tiempo.
-                            <br /><br />
-                            Si optas por solo realizar el reportaje únicamente con entrega digital el plazo se reduce ya que no habría que imprimir nada.
+                        <br /><br />
+                        Si optas por solo realizar el reportaje únicamente con entrega digital el plazo se reduce ya que no habría que imprimir nada.
                         </p>
                     </motion.div>)}
                 </AnimatePresence>
@@ -423,7 +423,7 @@ export default function Preguntas({ isMobile, preguntas }) {
                         }}
                     >
                         <p>
-                            Muy sencillo, clickas en el botón "Reservar Sesión" en el pack que hayas elegido y te llevará a abrir la conversación conmigo por <strong>WhatsApp</strong> donde fijaremos los detalles. También puedes llamarme directamente al teléfono: <strong>691 041 289</strong>
+                            Muy sencillo, clickas en el botón &#34;Reservar Sesión&#34; en el pack que hayas elegido y te llevará a abrir la conversación conmigo por <strong>WhatsApp</strong> donde fijaremos los detalles. También puedes llamarme directamente al teléfono: <strong>691 041 289</strong>
                         </p>
                     </motion.div>)}
                 </AnimatePresence>

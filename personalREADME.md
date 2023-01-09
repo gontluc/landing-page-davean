@@ -17,3 +17,5 @@ https://developers.cloudflare.com/pages/framework-guides/deploy-a-nextjs-site/
 - Delete API route `hello.js` (incompatible with Cloudflare)
 
 - Configure `next.config.js`
+
+- On Cloudflare deployment settings: add an evironmental variable: NODE_VERSION with value of 14
