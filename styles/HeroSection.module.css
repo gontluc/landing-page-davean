@@ -54,7 +54,7 @@
 .heroImg3 {
   width: auto;
   height: 100vh;
-  background: var(--herosection-img3-dt);
+  background: var(--herosection-img3);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -74,7 +74,7 @@
 .heroImg4 {
   width: auto;
   height: 100vh;
-  background: var(--herosection-img4-dt);
+  background: var(--herosection-img4);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -94,7 +94,7 @@
 .heroImg5 {
   width: auto;
   height: 100vh;
-  background: var(--herosection-img5-dt);
+  background: var(--herosection-img5);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -114,7 +114,7 @@
 .heroImg6 {
   width: auto;
   height: 100vh;
-  background: var(--herosection-img6-dt);
+  background: var(--herosection-img6);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -134,7 +134,7 @@
 .heroImg7 {
   width: auto;
   height: 100vh;
-  background: var(--herosection-img7-dt);
+  background: var(--herosection-img7);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -263,15 +263,15 @@
     background-position: 50% 100%;
   } */
 
-  .heroImg3 {
+  /* .heroImg3 {
     background-position: 45% 60%;
-  }
+  } */
 
-  .heroImg4 {
+  /* .heroImg4 {
     background-position: 35% 80%;
-  }
+  } */
 
-  .heroImg5 {
+  /* .heroImg5 {
     background-position: 70% 80%;
   }
 
@@ -281,7 +281,7 @@
 
   .heroImg7 {
     background-position: 35% 50%;
-  }
+  } */
 
   .primera {
     line-height: 2.1em;
@@ -324,19 +324,19 @@
   .heroImg3 {
     height: 75vh;
     overflow: hidden;
-    background: var(--herosection-img3-mobile);
+    /* background: var(--herosection-img3-mobile);
     background-position: 50% 50%;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
   }
 
   .heroImg4 {
     height: 75vh;
     overflow: hidden;
-    background: var(--herosection-img4-mobile);
+    /* background: var(--herosection-img4-mobile);
     background-position: 50% 15%;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
   }
 
   .heroImg5 {
