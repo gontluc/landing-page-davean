@@ -27,6 +27,14 @@ export default function Section7({ isMobile }) {
         })
     }, [])
 
+    /* Changes img if mobile */
+    useEffect(() => {
+        if (isMobile) {
+            document.querySelector('html').style.setProperty('--section7-img', `linear-gradient(0deg, var(--aux-gradient), var(--aux-gradient)), url('/images/section7-mobile.jpg')`)
+        } else { /* if Desktop */
+        }
+    }, [isMobile])
+
     return (
         <div className={styles.container}>
             <section className={styles.section} ref={sectionRef}>

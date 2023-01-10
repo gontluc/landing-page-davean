@@ -7,7 +7,6 @@
 }
 
 .section {
-    --aux-gradient: rgba(0, 0, 0, 0);
     position: absolute;
     top: 0;
     width: 100%;
@@ -15,13 +14,13 @@
     align-items: center;
     justify-content: center;
     /* transform: translateY(-250px); */
-    background: linear-gradient(0deg, var(--aux-gradient), var(--aux-gradient)), url('../../public/images/section7.jpg');
+    background: var(--section7-img);
     background-repeat: no-repeat;
     background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
-    background-position: 53% 0%;
+    background-position: 65% 0%;
     height: 100%;
     background-attachment: fixed;
     /* filter: blur(10px); */

@@ -49,6 +49,9 @@ html {
 
   /* --nav-color: var(--blue); */
 
+  --aux-gradient: rgba(0, 0, 0, 0);
+  --section7-img: linear-gradient(0deg, var(--aux-gradient), var(--aux-gradient)), url('/images/section7.jpg');
+
   scroll-behavior: smooth;
 }
 

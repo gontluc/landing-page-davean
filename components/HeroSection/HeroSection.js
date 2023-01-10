@@ -114,13 +114,13 @@ export default function HeroSection({ isMobile, header }) {
             document.querySelector('html').style.setProperty('--herosection-img6', `linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg2-mobile.jpg')`)
             document.querySelector('html').style.setProperty('--herosection-img7', `linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg3-mobile.jpg')`)
         } else { /* if Desktop */
-            document.querySelector('html').style.setProperty('--herosection-img1', `linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg1.jpg')`)
+            /* document.querySelector('html').style.setProperty('--herosection-img1', `linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg1.jpg')`)
             document.querySelector('html').style.setProperty('--herosection-img2', `linear-gradient(0deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02)), url('/images/heroImg7.jpg')`)
             document.querySelector('html').style.setProperty('--herosection-img3', `linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg6.jpg')`)
             document.querySelector('html').style.setProperty('--herosection-img4', `linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg4.jpg')`)
             document.querySelector('html').style.setProperty('--herosection-img5', `linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg5.jpg')`)
             document.querySelector('html').style.setProperty('--herosection-img6', `linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg2.jpg')`)
-            document.querySelector('html').style.setProperty('--herosection-img7', `linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg3.jpg')`)
+            document.querySelector('html').style.setProperty('--herosection-img7', `linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg3.jpg')`) */
         }
     }, [isMobile])
 
