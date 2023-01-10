@@ -85,9 +85,8 @@ export default function HeroSection({ isMobile, header }) {
         }
     }
 
+    /* Change heroTitle */
     useEffect(() => {
-
-        /* Change heroTitle */
         setTimeout(() => {
             for(let i = 0; i < 7; i++) {
                 setInterval(() => {
@@ -102,13 +101,16 @@ export default function HeroSection({ isMobile, header }) {
             }
         /* 4000 is var(--loading) */
         }, 4000)
-
-        /* Changes imgs hero section if mobile */
-        if (isMobile) {
-            console.log(isMobile)
-            document.querySelector('html').style.setProperty('--herosection-img1-dt', `linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg1-mobile.jpg')`)
-        }
     }, [])
+
+    /* Changes imgs hero section if mobile */
+    useEffect(() => {
+        if (isMobile) {
+            document.querySelector('html').style.setProperty('--herosection-img1', `url('/images/heroImg1-mobile.jpg')`)
+            document.querySelector('html').style.setProperty('--herosection-img2', `url('/images/heroImg8.jpg')`)
+            console.log('first')
+        }
+    }, [isMobile])
 
     /* 
         RubberBand animation and framer-motion npm:

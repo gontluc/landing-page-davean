@@ -12,7 +12,7 @@
 .heroImg1 {
   width: auto;
   height: 100vh;
-  background: var(--herosection-img1-dt);
+  background: var(--herosection-img1);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -33,7 +33,7 @@
 .heroImg2 {
   width: auto;
   height: 100vh;
-  background: var(--herosection-img2-dt);
+  background: var(--herosection-img2);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -255,13 +255,13 @@
 }
 
 @media (max-width: 1800px) {
-  .heroImg1 {
+  /* .heroImg1 {
     background-position: 38% 40%;
-  }
+  } */
 
-  .heroImg2 {
+  /* .heroImg2 {
     background-position: 50% 100%;
-  }
+  } */
 
   .heroImg3 {
     background-position: 45% 60%;
@@ -315,10 +315,10 @@
   .heroImg2 {
     height: 75vh;
     overflow: hidden;
-    background: var(--herosection-img2-mobile);
+    /* background: var(--herosection-img2-mobile);
     background-position: 50% 30%;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
   }
 
   .heroImg3 {

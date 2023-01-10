@@ -27,11 +27,11 @@ html {
   --font-800: 30px;
   --font-600: 25px;
 
-  --herosection-img1-dt: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg1.jpg');
+  --herosection-img1: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg1.jpg');
 
-  --herosection-img2-dt: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg7.jpg');
+  --herosection-img2: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg7.jpg');
 
-  --herosection-img2-mobile: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg7mobile.jpg');
+  /* --herosection-img2-mobile: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg8.jpg'); */
 
   --herosection-img3-dt: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg6.jpg');
 
