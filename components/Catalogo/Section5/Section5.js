@@ -1,7 +1,10 @@
 import styles from '../../../styles/Catalogo/Section5.module.css'
 
 import img1 from '../../../public/images/catalogo6.jpg'
+import img1Mobile from '../../../public/images/catalogo6-mobile.jpg'
+
 import img2 from '../../../public/images/catalogo7.jpg'
+import img2Mobile from '../../../public/images/catalogo7-mobile.jpg'
 
 import Image from 'next/image'
 
@@ -34,7 +37,7 @@ export default function Section5({ isMobile, animateImg, animateImg4 }) {
                 >
                     <Image 
                         alt='niña fotografía primera comunión' 
-                        src={img1} 
+                        src={isMobile ? img1Mobile : img1} 
                         className={styles.img1} 
                         quality={100} 
                     />
@@ -47,7 +50,7 @@ export default function Section5({ isMobile, animateImg, animateImg4 }) {
                 >
                     <Image 
                         alt='niño fotografía primera comunión' 
-                        src={img2} 
+                        src={isMobile ? img2Mobile : img2} 
                         className={styles.img2} 
                         quality={100} 
                     />

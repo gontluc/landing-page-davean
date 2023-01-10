@@ -6,12 +6,16 @@ import styles3 from '../../styles/Catalogo3.module.css'
 import Image from 'next/image'
 
 import catalogo1 from '../../public/images/catalogo1.jpg'
+import catalogo1Mobile from '../../public/images/catalogo1-mobile.jpg'
+
 import cruz from '../../public/images/cruz.png'
 import rectangle from '../../public/images/rectangle.png'
 
 import catalogo2 from '../../public/images/catalogo2.jpg'
+import catalogo2Mobile from '../../public/images/catalogo2-mobile.jpg'
 
 import catalogo3 from '../../public/images/catalogo3.jpg'
+import catalogo3Mobile from '../../public/images/catalogo3-mobile.jpg'
 
 import Section4 from './Section4/Section4'
 import Section5 from './Section5/Section5'
@@ -161,7 +165,7 @@ export default function Catalogo({ isMobile, catalogo }) {
                 >
                     <Image 
                         alt='niña fotografía primera comunión' 
-                        src={catalogo1} 
+                        src={isMobile ? catalogo1Mobile : catalogo1} 
                         className={styles1.catalogo1} 
                         quality={100} 
                         priority
@@ -191,7 +195,7 @@ export default function Catalogo({ isMobile, catalogo }) {
                 >
                     <Image 
                         alt='niña saltando fotografía primera comunión' 
-                        src={catalogo2} 
+                        src={isMobile ? catalogo2Mobile : catalogo2} 
                         className={styles2.catalogo2} 
                         quality={100} 
                     />
@@ -246,7 +250,7 @@ export default function Catalogo({ isMobile, catalogo }) {
                 >
                     <Image 
                         alt='niño pescando fotografía primera comunión' 
-                        src={catalogo3} 
+                        src={isMobile ? catalogo3Mobile : catalogo3} 
                         className={styles3.catalogo3} 
                         quality={100} 
                     />

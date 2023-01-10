@@ -11,6 +11,18 @@ import r3 from '../../../public/images/r3.jpg'
 import r4 from '../../../public/images/r4.jpg'
 import r5 from '../../../public/images/r5.jpg'
 
+/* Mobile */
+import l1Mobile from '../../../public/images/l1-mobile.jpg'
+import l2Mobile from '../../../public/images/l2-mobile.jpg'
+import l3Mobile from '../../../public/images/l3-mobile.jpg'
+import l4Mobile from '../../../public/images/l4-mobile.jpg'
+
+import r1Mobile from '../../../public/images/r1-mobile.jpg'
+import r2Mobile from '../../../public/images/r2-mobile.jpg'
+import r3Mobile from '../../../public/images/r3-mobile.jpg'
+import r4Mobile from '../../../public/images/r4-mobile.jpg'
+import r5Mobile from '../../../public/images/r5-mobile.jpg'
+
 import flower from '../../../public/images/flower.png'
 import wheat from '../../../public/images/wheat.png'
 
@@ -46,28 +58,28 @@ export default function Section6({ isMobile }) {
                 <div className={styles.imgsColumn}>
                     <Image 
                         alt='niño fotografía primera comunión' 
-                        src={l1} 
+                        src={isMobile ? l1Mobile : l1} 
                         className={styles.img} 
                         quality={100} 
                     />
 
                     <Image 
                         alt='niño fotografía primera comunión' 
-                        src={l2} 
+                        src={isMobile ? l2Mobile : l2} 
                         className={styles.img} 
                         quality={100} 
                     />
 
                     <Image 
                         alt='niña fotografía primera comunión' 
-                        src={l3} 
+                        src={isMobile ? l3Mobile : l3} 
                         className={styles.img} 
                         quality={100} 
                     />
 
                     <Image 
                         alt='niño fotografía primera comunión' 
-                        src={l4} 
+                        src={isMobile ? l4Mobile : l4} 
                         className={styles.img} 
                         quality={100} 
                     />
@@ -76,35 +88,35 @@ export default function Section6({ isMobile }) {
                 <div className={styles.imgsColumn}>
                     <Image 
                         alt='niña fotografía primera comunión' 
-                        src={r1} 
+                        src={isMobile ? r1Mobile : r1} 
                         className={styles.img} 
                         quality={100} 
                     />
 
                     <Image 
                         alt='niña fotografía primera comunión' 
-                        src={r2} 
+                        src={isMobile ? r2Mobile : r2} 
                         className={styles.img} 
                         quality={100} 
                     />
 
                     <Image 
                         alt='niña fotografía primera comunión' 
-                        src={r3} 
+                        src={isMobile ? r3Mobile : r3} 
                         className={styles.img} 
                         quality={100} 
                     />
 
                     <Image 
                         alt='hermanos fotografía primera comunión' 
-                        src={r4} 
+                        src={isMobile ? r4Mobile : r4} 
                         className={styles.img} 
                         quality={100} 
                     />
 
                     <Image 
                         alt='niña fotografía primera comunión' 
-                        src={r5} 
+                        src={isMobile ? r5Mobile : r5} 
                         className={styles.img} 
                         quality={100} 
                     />

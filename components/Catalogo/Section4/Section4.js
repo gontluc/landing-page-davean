@@ -2,7 +2,11 @@ import styles from '../../../styles/Catalogo/Section4.module.css'
 import stylesr from '../../../styles/Catalogo/Section4responsive.module.css'
 
 import img1 from '../../../public/images/catalogo4.jpg'
+import img1Mobile from '../../../public/images/catalogo4-mobile.jpg'
+
 import img2 from '../../../public/images/catalogo5.jpg'
+import img2Mobile from '../../../public/images/catalogo5-mobile.jpg'
+
 import leaves from '../../../public/images/leaves.png'
 
 import { useEffect, useState } from 'react'
@@ -100,7 +104,7 @@ export default function Section4({ isMobile, animateImg3, animateImg4 }) {
                     >
                         <Image 
                             alt='niña fotografía primera comunión' 
-                            src={img2} 
+                            src={img2Mobile} 
                             className={stylesr.img2} 
                             quality={100} 
                         />
@@ -113,7 +117,7 @@ export default function Section4({ isMobile, animateImg3, animateImg4 }) {
                     >
                         <Image 
                             alt='niño fotografía primera comunión' 
-                            src={img1} 
+                            src={img1Mobile} 
                             className={stylesr.img1} 
                             quality={100} 
                         />
