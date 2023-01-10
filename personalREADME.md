@@ -10,7 +10,7 @@
  
 npm i framer-motion
 
-# Migration from Vercel to Cloudflare
+# Migration from Vercel to Cloudflare (back to vercel now)
 
 https://developers.cloudflare.com/pages/framework-guides/deploy-a-nextjs-site/
 
