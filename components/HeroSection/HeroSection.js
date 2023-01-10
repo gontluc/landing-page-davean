@@ -106,9 +106,8 @@ export default function HeroSection({ isMobile, header }) {
     /* Changes imgs hero section if mobile */
     useEffect(() => {
         if (isMobile) {
-            document.querySelector('html').style.setProperty('--herosection-img1', `url('/images/heroImg1-mobile.jpg')`)
-            document.querySelector('html').style.setProperty('--herosection-img2', `url('/images/heroImg8.jpg')`)
-            console.log('first')
+            document.querySelector('html').style.setProperty('--herosection-img1', `linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/images/heroImg1-mobile.jpg')`)
+            document.querySelector('html').style.setProperty('--herosection-img2', `linear-gradient(0deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02)), url('/images/heroImg8.jpg')`)
         }
     }, [isMobile])
 
