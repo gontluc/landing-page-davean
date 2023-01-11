@@ -36,6 +36,16 @@
     text-align: center;
 }
 
+.waves {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: rotate(180deg);
+    top: -5px;
+}
+
 /* @media (max-width: @iphone-screen) {
     .section {
         background-attachment: scroll;
@@ -57,6 +67,23 @@
 @media (max-width: 800px) {
     .frase {
         font-size: var(--font-800);
+    }
+}
+
+@media (max-width: 769px) {
+    .container {
+        height: 100vh;
+        overflow: visible;
+    }
+
+    .section {
+        background-attachment: initial;
+    }
+
+    .frase {
+        color: var(--blue);
+        top: -100px;
+        padding: 10px;
     }
 }
 

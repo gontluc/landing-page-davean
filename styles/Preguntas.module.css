@@ -35,12 +35,13 @@
     align-items: center;
     padding: 0 30px;
     justify-content: space-between;
-    cursor: pointer;
+    font-weight: bold;
+    /* cursor: pointer; */
 }
 
-.pregunta:hover {
+/* .pregunta:hover {
     color: var(--green);
-}
+} */
 
 .pregunta:first-of-type {
     border: solid 2px rgba(0, 161, 151, 0.2);
@@ -49,11 +50,18 @@
 .pregunta div {
     display: flex;
     align-items: center;
+    position: relative;
+    margin-left: 15px;
 }
 
-.question {
+.pregunta div::before {
+    content: '?';
     transform: rotate(180deg);
-    margin-top: 10px;
+    
+    /* margin-top: 10px; */
+    position: absolute;
+    top: 5px;
+    left: -15px;
 }
 
 .arrow {
@@ -71,56 +79,81 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 0 30px;
+    padding: 30px;
 }
 
 @media (max-width: 1400px) {
     .container {
-        transform: scale(.9);
+        /* transform: scale(.9); */
+        font-size: .9em;
     }
 }
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
     .container {
         transform: translateY(-50px) scale(.9);
     }
-}
+} */
 
 @media (max-width: 1100px) {
-    .container {
+    /* .container {
         transform: translateY(-0px) scale(.8);
         margin-top: 30px;
+    } */
+
+    .pregunta {
+        width: 90vw;
+        font-size: .8em;
+    }
+
+    .respuesta {
+        width: 90vw;
+        font-size: .8em;
+    }
+
+    .pregunta div {
+        margin-left: 10px;
+    }
+    
+    .pregunta div::before {
+        left: -10px;
     }
 }
 
 @media (max-width: 800px) {
-    .container {
+    /* .container {
         transform: translateY(-110px) scale(.75);
         margin-top: 0px;
+    } */
+
+    .pregunta {
+        font-size: .7em;
+    }
+
+    .respuesta {
+        font-size: .7em;
+    }
+
+    .title {
+        font-size: 40px;
     }
 }
 
 @media (max-width: 769px) {
-    .pregunta {
+    /* .pregunta {
         width: 620px;
     }
 
     .respuesta {
         width: 620px;
         padding: 0 30px;
-    }
+    } */
 }
 
 @media (max-width: 600px) {
-    .container {
+    /* .container {
         transform: translateY(-340px) scale(.7);
         margin-top: 0px;
         padding-top: 0px;
-    }
-}
-
-@media (max-width: 500px) {
-    .container {
-        transform: translateY(-570px) scale(.65);
-    }
+    } */
 }

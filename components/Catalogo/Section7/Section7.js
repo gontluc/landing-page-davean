@@ -1,5 +1,9 @@
 import styles from '../../../styles/Catalogo/Section7.module.css'
 
+import waves from '../../../public/images/waveReviews.png'
+
+import Image from 'next/image'
+
 import { useEffect, useRef } from 'react'
 
 export default function Section7({ isMobile }) {
@@ -23,6 +27,8 @@ export default function Section7({ isMobile }) {
                     sectionRef.current.style.filter = 'blur(10px)'
                     sectionRef.current.style.setProperty('--aux-gradient', 'rgba(0, 0, 0, 0.2)')
                 }
+            } else {
+                sectionRef.current.style.filter = 'blur(0px)'
             }
         })
     }, [])
@@ -37,6 +43,8 @@ export default function Section7({ isMobile }) {
 
     return (
         <div className={styles.container}>
+            <Image className={styles.waves} src={waves} alt='waves' quality={100}/>
+
             <section className={styles.section} ref={sectionRef}>
             </section>
 

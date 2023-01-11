@@ -5,6 +5,8 @@ import styles3 from '../../styles/Catalogo3.module.css'
 
 import Image from 'next/image'
 
+import waves from '../../public/images/waveReviews.png'
+
 import catalogo1 from '../../public/images/catalogo1.jpg'
 import catalogo1Mobile from '../../public/images/catalogo1-mobile.jpg'
 
@@ -156,6 +158,8 @@ export default function Catalogo({ isMobile, catalogo }) {
 
     return (
         <div className={styles.container} ref={catalogo}>
+            <Image className={styles.waves} src={waves} alt='waves' quality={100}/>
+
             <section className={styles1.section1}>
 
                 <motion.div 

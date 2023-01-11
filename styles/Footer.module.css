@@ -153,10 +153,11 @@
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    background: linear-gradient(89.98deg, #714E06 -1.7%, #FFCF26 49.2%, #714E06 98.32%);
+    color: #FFCF26;
+    /* background: linear-gradient(89.98deg, #714E06 -1.7%, #FFCF26 49.2%, #714E06 98.32%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
+    background-clip: text; */
 }
 
 .phone {

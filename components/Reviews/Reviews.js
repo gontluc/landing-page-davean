@@ -52,10 +52,10 @@ export default function Reviews({ isMobile }) {
                 <div className={styles.review}>
                         <Image className={styles.comillas} src={comillas} alt='comillas' quality={100}/>
                         <p className={styles.reviewText}>
-                            Muy buen profesional, atento, rápido y con muchísima calidad en su trabajo
+                            Muy satisfechos con el resultado, en el reportaje de comunión de mi hija. Así como en sesión navideña. Buen profesional y atento.
                         </p>
                         <Image className={styles.stars} src={stars} alt='5 estrellas' quality={100}/>
-                        <p className={styles.author}>Ana Maria</p>
+                        <p className={styles.author}>Carmen G</p>
                     </div>
                 </div>
             </div>

@@ -5,29 +5,51 @@
     align-items: center;
     flex-direction: column;
     gap: 50px;
+    position: relative;
+}
+
+.waves {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    transform: rotate(180deg);
+    position: absolute;
+    top: -2px;
+    display: none;
 }
 
 .frase {
     color: var(--blue);
-    font-size: 55px;
+    font-size: 45px;
     font-weight: 100;
     line-height: 1em;
     text-align: center;
     position: relative;
 }
 
-.abreComilla {
+.frase::before {
     position: absolute;
-    top: -80%;
-    left: -55%;
-    transform: scale(.4);
+    content: '';
+    top: -40%;
+    left: -20%;
+    width: 100px;
+    height: 100px;
+    background-image: url('/images/abreComillas.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.cierraComilla {
+
+.frase::after {
     position: absolute;
-    top: -30%;
-    right: -55%;
-    transform: scale(.4);
+    content: '';
+    top: 40%;
+    right: -20%;
+    width: 100px;
+    height: 100px;
+    background-image: url('/images/cierraComillas.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .lineaContainer {
@@ -60,14 +82,16 @@
         font-size: 45px;
     }
 
-    .abreComilla {
-        transform: scale(.3);
-        top: -90%;
+    .frase::before {
+        width: 60px;
+        height: 60px;
+        left: -15%;
     }
 
-    .cierraComilla {
-        transform: scale(.3);
-        top: -50%;
+    .frase::after {
+        width: 60px;
+        height: 60px;
+        right: -15%;
     }
 
     .lineaContainer {
@@ -89,16 +113,16 @@
         font-size: 35px;
     }
 
-    .abreComilla {
-        transform: scale(.2);
-        top: -120%;
-        left: -65%;
+    .frase::before {
+        width: 40px;
+        height: 40px;
+        top: -20%;
     }
 
-    .cierraComilla {
-        transform: scale(.2);
-        top: -85%;
-        right: -65%;
+    .frase::after {
+        width: 40px;
+        height: 40px;
+        top: 20%;
     }
 
     .lineaContainer {
@@ -115,22 +139,21 @@
     .container {
         height: 250px;
         gap: 30px;
+        padding-top: 60px;
     }
     
     .frase {
         font-size: 25px;
     }
 
-    .abreComilla {
-        transform: scale(.1);
-        top: -200%;
-        left: -72%;
+    .frase::before {
+        top: -180%;
+        left: 28%;
     }
 
-    .cierraComilla {
-        transform: scale(.1);
-        top: -155%;
-        right: -70%;
+    .frase::after {
+        top: -160%;
+        right: 28%;
     }
 
     .lineaContainer {
@@ -142,24 +165,24 @@
     }
 }
 
+@media (max-width: 600px) {
+    .container {
+        padding-top: 40px;
+    }
+
+    .waves {
+        display: block;
+    }
+}
+
 @media (max-width: 400px) {
     .container {
         gap: 25px;
-        margin-top: 20px;
+        padding-top: 30px;
     }
     
     .frase {
         font-size: 20px;
-    }
-
-    .abreComilla {
-        top: -360%;
-        left: -40%;
-    }
-
-    .cierraComilla {
-        top: -340%;
-        right: -40%;
     }
 
     .lineaContainer {

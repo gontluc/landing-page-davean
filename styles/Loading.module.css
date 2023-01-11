@@ -26,12 +26,14 @@
     display: flex;
     justify-content: center;
     animation: correct forwards .8s ease-in-out;
+    animation-delay: 1s;
 }
 
 .camara {
     max-width: 300px;
     height: auto;
     animation: spin forwards .8s ease-in-out;
+    animation-delay: 1s;
 }
 
 .boton {
@@ -41,6 +43,7 @@
     top: 0;
     left: 0;
     animation: spin-btn forwards 1.6s ease-in-out;
+    animation-delay: 1s;
 }
 
 .d {
@@ -50,7 +53,7 @@
     top: 0;
     left: 0;
     animation: appears forwards .4s ease-in-out;
-    animation-delay: 1.6s;
+    animation-delay: calc(1.6s + 1s);
     opacity: 0;
 }
 

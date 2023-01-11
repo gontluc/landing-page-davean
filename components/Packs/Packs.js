@@ -76,11 +76,11 @@ export default function Packs({ isMobile, packs }) {
 
     function animatePack3(controlsPack, setAnimatedPack) {
         setTimeout(() => {
-            controlsPack.start({
+            controlsPack.start({/* 
                 transform: [
                     'translateX(200%)',
                     'translateX(0px)'
-                ],
+                ], */
                 opacity: [0, 1],
                 transition: {                
                     times: [0, 1],
