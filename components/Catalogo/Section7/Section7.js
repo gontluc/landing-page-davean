@@ -45,7 +45,7 @@ export default function Section7({ isSafari, isMobile }) {
         <div className={styles.container}>
             <Image className={styles.waves} src={waves} alt='waves' quality={100}/>
 
-            <section className={styles.section} ref={sectionRef} style={{ backgroundAttachment: isSafari ? 'initial' : 'fixed' }}>
+            <section className={styles.section} ref={sectionRef} style={{ backgroundAttachment: isSafari | isMobile ? 'initial' : 'fixed' }}>
             </section>
 
             <div className={styles.frase}>y tener un recuerdo para la eternidad.</div>
