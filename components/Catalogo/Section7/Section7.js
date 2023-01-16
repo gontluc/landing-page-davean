@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 import { useEffect, useRef } from 'react'
 
-export default function Section7({ isMobile }) {
+export default function Section7({ isSafari, isMobile }) {
 
     const sectionRef = useRef(null)
 
@@ -45,7 +45,7 @@ export default function Section7({ isMobile }) {
         <div className={styles.container}>
             <Image className={styles.waves} src={waves} alt='waves' quality={100}/>
 
-            <section className={styles.section} ref={sectionRef}>
+            <section className={styles.section} ref={sectionRef} style={{ backgroundAttachment: isSafari ? 'initial' : 'fixed' }}>
             </section>
 
             <div className={styles.frase}>y tener un recuerdo para la eternidad.</div>

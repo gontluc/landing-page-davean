@@ -138,15 +138,31 @@
 @media (max-width: 700px) {
     .container {
         height: 250px;
-        gap: 30px;
-        padding-top: 60px;
+        gap: 20px;
+        padding-top: 40px;
     }
     
     .frase {
         font-size: 25px;
+        width: 210px;
+        line-height: 1.3em;
     }
 
     .frase::before {
+        width: 35px;
+        height: 35px;
+        top: 25%;
+        left: -22%;
+    }
+
+    .frase::after {
+        width: 35px;
+        height: 35px;
+        top: 40%;
+        right: -22%;
+    }
+
+    /* .frase::before {
         top: -180%;
         left: 28%;
     }
@@ -154,14 +170,14 @@
     .frase::after {
         top: -160%;
         right: 28%;
-    }
+    } */
 
     .lineaContainer {
-        max-width: 140px;
+        max-width: 90px;
     }
 
     .davean {
-        max-width: 85px;
+        max-width: 75px;
     }
 }
 
@@ -175,7 +191,7 @@
     }
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
     .container {
         gap: 25px;
         padding-top: 30px;
@@ -192,4 +208,4 @@
     .davean {
         max-width: 70px;
     }
-}
+} */

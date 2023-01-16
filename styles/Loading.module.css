@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
     position: fixed;
     top: 0;
     left: 0;
@@ -19,6 +18,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 50px;
 }
 
 .imgs {
@@ -84,6 +84,14 @@
         transform: rotate(0deg);
     }
 
+    70% {
+        transform: rotate(380deg);
+    }
+
+    85% {
+        transform: rotate(350deg);
+    }
+
     to {
         transform: rotate(360deg);
     }
@@ -92,6 +100,14 @@
 @keyframes spin-btn {
     from {
         transform: rotate(0deg);
+    }
+
+    35% {
+        transform: rotate(380deg);
+    }
+
+    43% {
+        transform: rotate(350deg);
     }
 
     50% {

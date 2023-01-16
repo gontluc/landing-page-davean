@@ -28,7 +28,7 @@ import { motion, useAnimationControls } from "framer-motion"
 
 import { useState } from 'react'
 
-export default function Catalogo({ isMobile, catalogo }) {
+export default function Catalogo({ isSafari, isMobile, catalogo }) {
 
     const [animatedImg1, setAnimatedImg1] = useState(false)
     const [animatedImg2, setAnimatedImg2] = useState(false)
@@ -268,7 +268,7 @@ export default function Catalogo({ isMobile, catalogo }) {
 
             <Section6 isMobile={isMobile} />
 
-            <Section7 isMobile={isMobile} />
+            <Section7 isSafari={isSafari} isMobile={isMobile} />
         </div>
     )
 }

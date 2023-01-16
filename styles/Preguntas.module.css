@@ -35,13 +35,13 @@
     align-items: center;
     padding: 0 30px;
     justify-content: space-between;
-    font-weight: bold;
-    /* cursor: pointer; */
+    /* font-weight: bold; */
+    cursor: pointer;
 }
 
-/* .pregunta:hover {
+.pregunta:hover {
     color: var(--green);
-} */
+}
 
 .pregunta:first-of-type {
     border: solid 2px rgba(0, 161, 151, 0.2);
@@ -67,7 +67,7 @@
 .arrow {
     width: 35px;
     height: auto;
-    transition: all .5s ease-in-out;
+    /* transition: all .5s ease-in-out; */
 }
 
 .respuesta {
@@ -128,10 +128,12 @@
 
     .pregunta {
         font-size: .7em;
+        padding: 20px 20px;
     }
 
     .respuesta {
         font-size: .7em;
+        padding: 20px 30px;
     }
 
     .title {

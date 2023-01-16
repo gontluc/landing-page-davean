@@ -61,7 +61,7 @@ export default function Reviews({ isMobile }) {
             </div>
 
             <div className={styles.followMe}>
-                <h4 className={styles.follow}>Sígueme en Instagram</h4>
+                <h5 className={styles.follow}>Sígueme en Instagram</h5>
                 <div className={styles.profile}><Link href="https://www.instagram.com/comuniones_davean/" legacyBehavior><a target="_blank">@comuniones_davean</a></Link></div>
             </div>
 
