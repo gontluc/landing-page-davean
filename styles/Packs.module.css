@@ -11,6 +11,8 @@
     letter-spacing: 0.03em;
     font-size: 55px;
     text-align: center;
+    font-weight: normal;
+    -webkit-text-stroke: 2px;
 }
 
 .packs {

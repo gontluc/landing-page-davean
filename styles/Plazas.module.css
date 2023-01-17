@@ -21,6 +21,8 @@
     color: var(--green);
     letter-spacing: .04em;
     text-align: center;
+    font-weight: normal;
+    -webkit-text-stroke: 2px;
 }
 
 .subTitle {
@@ -28,6 +30,8 @@
     letter-spacing: .04em;
     color: var(--blue);
     text-align: center;
+    font-weight: normal;
+    -webkit-text-stroke: 2px;
 }
 
 .lineLogo {
