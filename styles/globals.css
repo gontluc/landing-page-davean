@@ -59,7 +59,7 @@ body {
   font-family: var(--adele-font);
   cursor: default;
   -webkit-font-smoothing: antialiased;
-  /* text-rendering: optimizeLegibility; */
+  text-rendering: geometricPrecision;
 }
 
 a {
