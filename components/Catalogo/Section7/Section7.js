@@ -11,7 +11,7 @@ export default function Section7({ isSafari, isMobile }) {
     const sectionRef = useRef(null)
 
     useEffect(() => {
-        window.addEventListener('scroll', () => {
+        !isSafari && window.addEventListener('scroll', () => {
 
             const distFromTop = sectionRef.current.getBoundingClientRect().top
             const divHeight = sectionRef.current.getBoundingClientRect().height
