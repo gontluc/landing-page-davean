@@ -58,7 +58,7 @@ html {
 body {
   font-family: var(--adele-font);
   cursor: default;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
   text-rendering: optimizeLegibility;
 }
 
