@@ -10,6 +10,8 @@
  
 npm i framer-motion
 
+npm install @vercel/analytics
+
 # Migration from Vercel to Cloudflare (back to vercel now)
 
 https://developers.cloudflare.com/pages/framework-guides/deploy-a-nextjs-site/

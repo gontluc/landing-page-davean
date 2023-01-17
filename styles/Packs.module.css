@@ -189,16 +189,251 @@
 }
 
 @media (max-width: 1300px) {
+    .container {
+        max-height: 700px;
+    }
+
     .packs {
         transform: scale(.7) translateY(-50px);
     }
 
     .infoContainer {
-        transform: translateY(-50px);
+        transform: translateY(-120px);
     }
 }
 
 @media (max-width: 1100px) {
+    .container {
+        max-height: none;
+    }
+
+    .title {
+        font-size: 45px;
+    }
+
+    .container {
+        margin-top: 120px;
+    }
+
+    .packs {
+        transform: scale(1);
+        flex-direction: column;
+        gap: 60px;
+        margin-top: 50px;
+    }
+
+    .pack {
+        width: 450px;
+        height: 670px;
+    }
+
+    .packDeluxe {
+        height: 700px;
+    }
+
+    .infoContainer {
+        transform: translateY(-0px);
+        margin-top: 30px;
+    }
+
+    .arrow {
+        top: -.7vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        max-height: 2100px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .packs {
+        transform: scale(.9) translateY(-50px);
+        margin-top: 0px;
+    }
+
+    .infoContainer {
+        transform: translateY(-110px);
+        margin-top: 0px;
+    }
+
+    .info {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-height: 1870px;
+    }
+
+    .packs {
+        transform: scale(.8) translateY(-180px);
+    }
+
+    .infoContainer {
+        transform: translateY(-340px);
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        max-height: 1650px;
+        margin-top: 100px;
+    }
+
+    .packs {
+        transform: scale(.7) translateY(-380px);
+    }
+
+    .arrow {
+        display: inline;
+        position: static;
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+
+    .infoContainer {
+        transform: translateY(-570px);
+        text-align: center;
+    }
+
+    .info {
+        display: inline;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        max-height: 1420px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .packs {
+        transform: scale(.6) translateY(-640px);
+    }
+
+    .infoContainer {
+        transform: translateY(-810px);
+    }
+}
+
+/* @media (max-width: 1600px) {
+    .packs {
+        transform: scale(.9);
+    }
+
+    .packs {
+        margin-top: 50px;
+        margin-bottom: 40px;
+        gap: 4vw;
+    }
+    
+    .packBasico {
+        width: 450px;
+        height: 670px;
+    }
+    
+    .packPro {
+        width: 500px;
+        height: 740px;
+    }
+    
+    .packDeluxe {
+        width: 450px;
+        height: 670px;
+    }
+    
+    .goldLines {
+        top: -0px;
+        right: -0px;
+        width: 150px;
+    }
+    
+    .packTitle {
+        font-size: 45px;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+    
+    .packPrice {
+        max-width: 165px;
+    }
+    
+    .packObjects {
+        gap: 15px;
+    }
+    
+    .object {
+        font-size: 25px;
+        width: 330px;
+    }
+    
+    .packDeluxe .object {
+        width: 340px;
+    }
+    
+    .objectLogo {
+        width: 24px;
+        transform: translateY(4px);
+        margin-right: 5px;
+    }
+    
+    .lineBlue {
+        height: 2px;
+    }
+    
+    .lineGreen {
+        height: 3px;
+    }
+    
+    .packBtn {
+        margin-bottom: 40px;
+        font-size: 30px;
+        padding: 3px 30px;
+    }
+    
+    .packPro .packBtn {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .title {
+        font-size: 50px;
+    }
+
+    .packs {
+        transform: scale(.8);
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .container {
+        max-height: 75vh;
+    }
+
+    .packs {
+        transform: scale(.7) translateY(-50px);
+    }
+
+    .infoContainer {
+        transform: translateY(-120px);
+    }
+}
+
+@media (max-width: 1100px) {
+    .container {
+        max-height: none;
+    }
+
     .title {
         font-size: 45px;
     }
@@ -264,6 +499,11 @@
 }
 
 @media (max-width: 500px) {
+    .container {
+        max-height: 185vh;
+        margin-top: 100px;
+    }
+
     .packs {
         transform: scale(.7) translateY(-380px);
     }
@@ -277,6 +517,7 @@
 
     .infoContainer {
         transform: translateY(-570px);
+        text-align: center;
     }
 
     .info {
@@ -286,7 +527,7 @@
 
 @media (max-width: 360px) {
     .container {
-        margin-top: 100px;
+        max-height: 160vh;
     }
 
     .title {
@@ -296,4 +537,8 @@
     .packs {
         transform: scale(.6) translateY(-640px);
     }
-}
+
+    .infoContainer {
+        transform: translateY(-810px);
+    }
+} */

@@ -121,10 +121,11 @@
 }
 
 @media (max-width: 800px) {
-    /* .container {
-        transform: translateY(-110px) scale(.75);
-        margin-top: 0px;
-    } */
+    .container {
+        /* transform: translateY(-110px) scale(.75);
+        margin-top: 0px; */
+        gap: 40px;
+    }
 
     .pregunta {
         font-size: .7em;
