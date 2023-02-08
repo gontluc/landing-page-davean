@@ -43,7 +43,7 @@ export default function Plazas({ isMobile }) {
             <div className={styles.gift}>
                 <Image className={styles.giftImg} quality={100} alt='icono regalo' src={regalo}/>
                 <h1 className={styles.giftTitle}>¡REGALO ESPECIAL!</h1>
-                <p className={styles.giftDescription}>Reserva tu sesión antes del 31 de enero y consigue GRATIS una fotografía impresa en 30x40 cm de la foto que más os guste de la sesión.</p>
+                <p className={styles.giftDescription}>Reserva tu sesión antes del 28 de febrero y consigue GRATIS una fotografía impresa en 30x40 cm de la foto que más os guste de la sesión.</p>
             </div>
 
         </div>

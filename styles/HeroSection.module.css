@@ -244,6 +244,7 @@
 .logoLine {
   max-width: 22px;
   margin: 0 5px;
+  margin-top: 2px;
   height: auto;
 }
 
