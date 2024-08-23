@@ -172,7 +172,7 @@ export default function Preguntas({ isMobile, preguntas }) {
 
                 {answer9 && <div className={styles.respuesta}>
                      <p>
-                        Muy sencillo, clickas en el botón &#34;Reservar Sesión&#34; en el pack que hayas elegido y te llevará a abrir la conversación conmigo por <strong>WhatsApp</strong> donde fijaremos los detalles. También puedes llamarme directamente al teléfono: <strong>691 041 289</strong>
+                        Muy sencillo, clickas en el botón &#34;Reservar Sesión&#34; en el pack que hayas elegido y te llevará a abrir la conversación conmigo por <strong>WhatsApp</strong> donde fijaremos los detalles. También puedes llamarme directamente al teléfono: {/* <strong>691 041 289</strong> */}
                     </p>
                 </div> }
 

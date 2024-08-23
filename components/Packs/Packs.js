@@ -121,7 +121,7 @@ export default function Packs({ isMobile, packs }) {
                     </div>
 
                     <div className={styles.packBtn}>
-                        <Link href="https://wa.me/34691041289/?text=Hola!%20Estoy%20interesado/a%20en%20el%20Pack%20Básico%20del%20reportaje%20de%20primera%20Comunión" legacyBehavior>
+                        <Link href="/"/* "https://wa.me/34691041289/?text=Hola!%20Estoy%20interesado/a%20en%20el%20Pack%20Básico%20del%20reportaje%20de%20primera%20Comunión" */ legacyBehavior>
                             <a target="_blank">
                                 RESERVAR SESIÓN
                             </a>
@@ -157,7 +157,7 @@ export default function Packs({ isMobile, packs }) {
                     </div>
 
                     <div className={styles.packBtn}>
-                        <Link href="https://wa.me/34691041289/?text=Hola!%20Estoy%20interesado/a%20en%20el%20Pack%20Pro%20del%20reportaje%20de%20primera%20Comunión" legacyBehavior>
+                        <Link href="/"/* "https://wa.me/34691041289/?text=Hola!%20Estoy%20interesado/a%20en%20el%20Pack%20Pro%20del%20reportaje%20de%20primera%20Comunión" */ legacyBehavior>
                             <a target="_blank">
                                 RESERVAR SESIÓN
                             </a>
@@ -203,7 +203,7 @@ export default function Packs({ isMobile, packs }) {
                     </div>
 
                     <div className={styles.packBtn}>
-                        <Link href="https://wa.me/34691041289/?text=Hola!%20Estoy%20interesado/a%20en%20el%20Pack%20Deluxe%20del%20reportaje%20de%20primera%20Comunión" legacyBehavior>
+                        <Link href="/"/* "https://wa.me/34691041289/?text=Hola!%20Estoy%20interesado/a%20en%20el%20Pack%20Deluxe%20del%20reportaje%20de%20primera%20Comunión" */ legacyBehavior>
                             <a target="_blank">
                                 RESERVAR SESIÓN
                             </a>

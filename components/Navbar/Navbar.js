@@ -290,12 +290,12 @@ export default function Navbar({ catalogo, packs, preguntas }) {
                         </a>
                     </Link>
                     <div className={styles.socials}>
-                        <Link href="https://www.instagram.com/comuniones_davean/" legacyBehavior>
+                        <Link href="/"/* "https://www.instagram.com/comuniones_davean/" */ legacyBehavior>
                             <a target="_blank">
                                 <Image src={ig} alt="instagram Davean fotografía" priority className={styles.social}/>
                             </a>
                         </Link>
-                        <Link href="https://es-es.facebook.com/daveanphotography/" legacyBehavior>
+                        <Link href="/"/* "https://es-es.facebook.com/daveanphotography/" */ legacyBehavior>
                             <a target="_blank">
                                 <Image src={fb} alt="facebook Davean fotografía" priority className={styles.social}/>
                             </a>

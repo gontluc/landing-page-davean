@@ -62,12 +62,12 @@ export default function Reviews({ isMobile }) {
 
             <div className={styles.followMe}>
                 <h5 className={styles.follow}>Sígueme en Instagram</h5>
-                <div className={styles.profile}><Link href="https://www.instagram.com/comuniones_davean/" legacyBehavior><a target="_blank">@comuniones_davean</a></Link></div>
+                <div className={styles.profile}><Link href="/"/* "https://www.instagram.com/comuniones_davean/" */ legacyBehavior><a target="_blank">@{/* comuniones_davean */}</a></Link></div>
             </div>
 
             <div className={styles.instagramPics}>
                 <div className={styles.igPicContainer}>
-                    <Link href="https://www.instagram.com/p/CgH2lQdsXfW/" legacyBehavior>
+                    <Link href="/"/* "https://www.instagram.com/p/CgH2lQdsXfW/" */ legacyBehavior>
                         <a target="_blank">
                             <Image className={styles.igPic} src={isMobile ? ig1Mobile : ig1} alt='niña fotografía comunión Sevilla Davean' quality={100}/>
                         </a>
@@ -75,7 +75,7 @@ export default function Reviews({ isMobile }) {
                 </div>
 
                 <div className={styles.igPicContainer}>
-                    <Link href="https://www.instagram.com/p/CfesWxvMSGz/" legacyBehavior>
+                    <Link href="/"/* "https://www.instagram.com/p/CfesWxvMSGz/" */ legacyBehavior>
                         <a target="_blank">
                             <Image className={styles.igPic} src={isMobile ? ig2Mobile : ig2} alt='hermanos fotografía comunión Sevilla Davean' quality={100}/>
                         </a>
@@ -83,7 +83,7 @@ export default function Reviews({ isMobile }) {
                 </div>
 
                 <div className={styles.igPicContainer}>
-                    <Link href="https://www.instagram.com/p/Cc2nrUDoAWo/" legacyBehavior>
+                    <Link href="/"/* "https://www.instagram.com/p/Cc2nrUDoAWo/" */ legacyBehavior>
                         <a target="_blank">
                             <Image className={styles.igPic} src={isMobile ? ig3Mobile : ig3} alt='niño fotografía comunión Sevilla Davean' quality={100}/>
                         </a>
@@ -91,7 +91,7 @@ export default function Reviews({ isMobile }) {
                 </div>
 
                 <div className={styles.igPicContainer}>
-                    <Link href="https://www.instagram.com/p/CdGazN0LSc4/" legacyBehavior>
+                    <Link href="/"/* "https://www.instagram.com/p/CdGazN0LSc4/" */ legacyBehavior>
                         <a target="_blank">
                             <Image className={styles.igPic} src={isMobile ? ig4Mobile : ig4} alt='niño fotografía comunión Sevilla Davean' quality={100}/>
                         </a>
@@ -99,7 +99,7 @@ export default function Reviews({ isMobile }) {
                 </div>
 
                 <div className={styles.igPicContainer}>
-                    <Link href="https://www.instagram.com/p/ChFYB3wLLX4/" legacyBehavior>
+                    <Link href="/"/* "https://www.instagram.com/p/ChFYB3wLLX4/" */ legacyBehavior>
                         <a target="_blank">
                             <Image className={styles.igPic} src={isMobile ? ig5Mobile : ig5} alt='niño fotografía comunión Sevilla Davean' quality={100}/>
                         </a>
@@ -107,7 +107,7 @@ export default function Reviews({ isMobile }) {
                 </div>
 
                 <div className={styles.igPicContainer}>
-                    <Link href="https://www.instagram.com/p/ChXvoNZrhQT/" legacyBehavior>
+                    <Link href="/"/* "https://www.instagram.com/p/ChXvoNZrhQT/" */ legacyBehavior>
                         <a target="_blank">
                             <Image className={styles.igPic} src={isMobile ? ig6Mobile : ig6} alt='niña fotografía comunión Sevilla Davean' quality={100}/>
                         </a>

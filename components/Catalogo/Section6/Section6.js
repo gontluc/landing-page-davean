@@ -123,7 +123,7 @@ export default function Section6({ isMobile }) {
                 </div>
             </div>
 
-            <div className={styles.btn}><Link href="https://www.instagram.com/comuniones_davean/" legacyBehavior><a target="_blank">VER MÁS FOTOS</a></Link></div>
+            <div className={styles.btn}><Link href="/"/* "https://www.instagram.com/comuniones_davean/"  */legacyBehavior><a target="_blank">VER MÁS FOTOS</a></Link></div>
 
         </section>
     )
