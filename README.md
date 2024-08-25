@@ -1,6 +1,6 @@
 # Landing Page Davean
 
-https://landing-page-davean.vercel.app/
+https://photographer-landing-page-beryl.vercel.app/
 
 <br>
 

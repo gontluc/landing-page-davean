@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /
 
-Sitemap: https://landing-page-davean.vercel.app/sitemap.xml
+Sitemap: https://photographer-landing-page-beryl.vercel.app/sitemap.xml
