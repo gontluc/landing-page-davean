@@ -104,7 +104,7 @@ export default function Footer({ header }) {
                 </div>
 
                 <div className={styles.bottomRightContainer}>
-                    <Link href="https://lucas-gontijo.vercel.app/" legacyBehavior>
+                    <Link href="/" legacyBehavior>
                         <a target="_blank">
                             <p>Lucas Gontijo</p>
                         </a>
